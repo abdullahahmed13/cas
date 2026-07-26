@@ -1,0 +1,71 @@
+.class public final Lio/reactivex/exceptions/d;
+.super Ljava/lang/RuntimeException;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# static fields
+.field private static final d:J = -0x576a0913e5716a6cL
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 0
+    .param p2    # Ljava/lang/Throwable;
+        .annotation build Lof/f;
+        .end annotation
+    .end param
+
+    if-eqz p2, :cond_0
+
+    goto :goto_0
+
+    .line 1
+    :cond_0
+    new-instance p2, Ljava/lang/NullPointerException;
+
+    invoke-direct {p2}, Ljava/lang/NullPointerException;-><init>()V
+
+    :goto_0
+    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 2
+    .param p1    # Ljava/lang/Throwable;
+        .annotation build Lof/f;
+        .end annotation
+    .end param
+
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "The exception was not handled due to missing onError handler in the subscribe() method call. Further reading: https://github.com/ReactiveX/RxJava/wiki/Error-Handling | "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, ""
+
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0, p1}, Lio/reactivex/exceptions/d;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
+.end method

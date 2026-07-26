@@ -1,0 +1,56 @@
+.class public final synthetic Lio/flutter/plugins/firebase/analytics/e0;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/f;
+
+
+# instance fields
+.field public final synthetic d:Lio/flutter/plugins/firebase/analytics/a1;
+
+.field public final synthetic e:Leg/l;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/flutter/plugins/firebase/analytics/a1;Leg/l;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/flutter/plugins/firebase/analytics/e0;->d:Lio/flutter/plugins/firebase/analytics/a1;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lio/flutter/plugins/firebase/analytics/e0;->e:Leg/l;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onComplete(Lcom/google/android/gms/tasks/m;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/flutter/plugins/firebase/analytics/e0;->d:Lio/flutter/plugins/firebase/analytics/a1;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lio/flutter/plugins/firebase/analytics/e0;->e:Leg/l;
+
+    .line 4
+    .line 5
+    invoke-static {v0, v1, p1}, Lio/flutter/plugins/firebase/analytics/a1;->s(Lio/flutter/plugins/firebase/analytics/a1;Leg/l;Lcom/google/android/gms/tasks/m;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

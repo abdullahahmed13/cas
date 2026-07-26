@@ -1,0 +1,4270 @@
+.class public abstract Lcom/google/crypto/tink/shaded/protobuf/l1;
+.super Lcom/google/crypto/tink/shaded/protobuf/a;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/crypto/tink/shaded/protobuf/l1$c;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$j;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$h;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$g;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$d;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$e;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$f;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$b;,
+        Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType:",
+        "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+        "TMessageType;TBuilderType;>;BuilderType:",
+        "Lcom/google/crypto/tink/shaded/protobuf/l1$b<",
+        "TMessageType;TBuilderType;>;>",
+        "Lcom/google/crypto/tink/shaded/protobuf/a<",
+        "TMessageType;TBuilderType;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final MEMOIZED_SERIALIZED_SIZE_MASK:I = 0x7fffffff
+
+.field private static final MUTABLE_FLAG_MASK:I = -0x80000000
+
+.field static final UNINITIALIZED_HASH_CODE:I = 0x0
+
+.field static final UNINITIALIZED_SERIALIZED_SIZE:I = 0x7fffffff
+
+.field private static defaultInstanceMap:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Object;",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "**>;>;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private memoizedSerializedSize:I
+
+.field protected unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1;->defaultInstanceMap:Ljava/util/Map;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/a;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, -0x1
+
+    .line 5
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 6
+    .line 7
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/s4;->c()Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method protected static A9(Lcom/google/crypto/tink/shaded/protobuf/l1;[B)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;[B)TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    array-length v0, p1
+
+    .line 2
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v1
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-static {p0, p1, v2, v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G9(Lcom/google/crypto/tink/shaded/protobuf/l1;[BIILcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+.end method
+
+.method private static B7(Lcom/google/crypto/tink/shaded/protobuf/t0;)Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extension"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<MessageType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$e<",
+            "TMessageType;TBuilderType;>;BuilderType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$d<",
+            "TMessageType;TBuilderType;>;T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/google/crypto/tink/shaded/protobuf/t0<",
+            "TMessageType;TT;>;)",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$h<",
+            "TMessageType;TT;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/t0;->e()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+
+    .line 8
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 11
+    .line 12
+    const-string v0, "Expected a lite extension."
+
+    .line 13
+    .line 14
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    throw p0
+.end method
+
+.method protected static B9(Lcom/google/crypto/tink/shaded/protobuf/l1;[BLcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;[B",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    array-length v1, p1
+
+    .line 3
+    invoke-static {p0, p1, v0, v1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G9(Lcom/google/crypto/tink/shaded/protobuf/l1;[BIILcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+.end method
+
+.method private static C9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/io/InputStream;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Ljava/io/InputStream;->read()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, -0x1
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    const/4 p0, 0x0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    invoke-static {v0, p1}, Lcom/google/crypto/tink/shaded/protobuf/z;->P(ILjava/io/InputStream;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+    :try_end_0
+    .catch Lcom/google/crypto/tink/shaded/protobuf/t1; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 14
+    new-instance v1, Lcom/google/crypto/tink/shaded/protobuf/a$a$a;
+
+    .line 15
+    .line 16
+    invoke-direct {v1, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/a$a$a;-><init>(Ljava/io/InputStream;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {v1}, Lcom/google/crypto/tink/shaded/protobuf/z;->k(Ljava/io/InputStream;)Lcom/google/crypto/tink/shaded/protobuf/z;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p0
+
+    .line 27
+    const/4 p2, 0x0
+
+    .line 28
+    :try_start_1
+    invoke-virtual {p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/z;->a(I)V
+    :try_end_1
+    .catch Lcom/google/crypto/tink/shaded/protobuf/t1; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p0
+
+    .line 32
+    :catch_0
+    move-exception p1
+
+    .line 33
+    invoke-virtual {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p0
+
+    .line 37
+    throw p0
+
+    .line 38
+    :catch_1
+    move-exception p0
+
+    .line 39
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 40
+    .line 41
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 42
+    .line 43
+    .line 44
+    throw p1
+
+    .line 45
+    :catch_2
+    move-exception p0
+
+    .line 46
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->a()Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result p1
+
+    .line 50
+    if-eqz p1, :cond_1
+
+    .line 51
+    .line 52
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 53
+    .line 54
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 55
+    .line 56
+    .line 57
+    move-object p0, p1
+
+    .line 58
+    :cond_1
+    throw p0
+.end method
+
+.method private static D9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/u;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/u;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/u;->h0()Lcom/google/crypto/tink/shaded/protobuf/z;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    const/4 p2, 0x0
+
+    .line 10
+    :try_start_0
+    invoke-virtual {p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/z;->a(I)V
+    :try_end_0
+    .catch Lcom/google/crypto/tink/shaded/protobuf/t1; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 11
+    .line 12
+    .line 13
+    return-object p0
+
+    .line 14
+    :catch_0
+    move-exception p1
+
+    .line 15
+    invoke-virtual {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p0
+
+    .line 19
+    throw p0
+.end method
+
+.method protected static E9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/z;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method static F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "instance",
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/z;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->n9()Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    :try_start_0
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/a0;->U(Lcom/google/crypto/tink/shaded/protobuf/z;)Lcom/google/crypto/tink/shaded/protobuf/a0;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    invoke-interface {v0, p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/r3;->i(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/o3;Lcom/google/crypto/tink/shaded/protobuf/v0;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->d(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Lcom/google/crypto/tink/shaded/protobuf/t1; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lcom/google/crypto/tink/shaded/protobuf/q4; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_3
+
+    .line 21
+    .line 22
+    .line 23
+    return-object p0
+
+    .line 24
+    :catch_0
+    move-exception p1
+
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :catch_1
+    move-exception p1
+
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :catch_2
+    move-exception p1
+
+    .line 29
+    goto :goto_2
+
+    .line 30
+    :catch_3
+    move-exception p0
+
+    .line 31
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    instance-of p1, p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 36
+    .line 37
+    if-eqz p1, :cond_0
+
+    .line 38
+    .line 39
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p0
+
+    .line 43
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 44
+    .line 45
+    throw p0
+
+    .line 46
+    :cond_0
+    throw p0
+
+    .line 47
+    :goto_0
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p2
+
+    .line 51
+    instance-of p2, p2, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 52
+    .line 53
+    if-eqz p2, :cond_1
+
+    .line 54
+    .line 55
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p0
+
+    .line 59
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 60
+    .line 61
+    throw p0
+
+    .line 62
+    :cond_1
+    new-instance p2, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 63
+    .line 64
+    invoke-direct {p2, p1}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {p2, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p0
+
+    .line 71
+    throw p0
+
+    .line 72
+    :goto_1
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/q4;->a()Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p1
+
+    .line 76
+    invoke-virtual {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object p0
+
+    .line 80
+    throw p0
+
+    .line 81
+    :goto_2
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/t1;->a()Z
+
+    .line 82
+    .line 83
+    .line 84
+    move-result p2
+
+    .line 85
+    if-eqz p2, :cond_2
+
+    .line 86
+    .line 87
+    new-instance p2, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 88
+    .line 89
+    invoke-direct {p2, p1}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 90
+    .line 91
+    .line 92
+    move-object p1, p2
+
+    .line 93
+    :cond_2
+    invoke-virtual {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p0
+
+    .line 97
+    throw p0
+.end method
+
+.method private static G9(Lcom/google/crypto/tink/shaded/protobuf/l1;[BIILcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input",
+            "offset",
+            "length",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;[BII",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    if-nez p3, :cond_0
+
+    .line 2
+    .line 3
+    return-object p0
+
+    .line 4
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->n9()Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    :try_start_0
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    add-int v4, p2, p3
+
+    .line 17
+    .line 18
+    new-instance v5, Lcom/google/crypto/tink/shaded/protobuf/l$b;
+
+    .line 19
+    .line 20
+    invoke-direct {v5, p4}, Lcom/google/crypto/tink/shaded/protobuf/l$b;-><init>(Lcom/google/crypto/tink/shaded/protobuf/v0;)V
+
+    .line 21
+    .line 22
+    .line 23
+    move-object v2, p1
+
+    .line 24
+    move v3, p2
+
+    .line 25
+    invoke-interface/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/r3;->h(Ljava/lang/Object;[BIILcom/google/crypto/tink/shaded/protobuf/l$b;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-interface {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/r3;->d(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Lcom/google/crypto/tink/shaded/protobuf/t1; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Lcom/google/crypto/tink/shaded/protobuf/q4; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_3
+
+    .line 29
+    .line 30
+    .line 31
+    return-object v1
+
+    .line 32
+    :catch_0
+    move-exception v0
+
+    .line 33
+    move-object p0, v0
+
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :catch_1
+    move-exception v0
+
+    .line 36
+    move-object p0, v0
+
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :catch_2
+    move-exception v0
+
+    .line 39
+    move-object p0, v0
+
+    .line 40
+    goto :goto_2
+
+    .line 41
+    :catch_3
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/t1;->n()Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p0
+
+    .line 49
+    throw p0
+
+    .line 50
+    :goto_0
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    instance-of p1, p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 55
+    .line 56
+    if-eqz p1, :cond_1
+
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p0
+
+    .line 62
+    check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 63
+    .line 64
+    throw p0
+
+    .line 65
+    :cond_1
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 66
+    .line 67
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object p0
+
+    .line 74
+    throw p0
+
+    .line 75
+    :goto_1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/q4;->a()Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object p0
+
+    .line 79
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p0
+
+    .line 83
+    throw p0
+
+    .line 84
+    :goto_2
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->a()Z
+
+    .line 85
+    .line 86
+    .line 87
+    move-result p1
+
+    .line 88
+    if-eqz p1, :cond_2
+
+    .line 89
+    .line 90
+    new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 91
+    .line 92
+    invoke-direct {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;-><init>(Ljava/io/IOException;)V
+
+    .line 93
+    .line 94
+    .line 95
+    move-object p0, p1
+
+    .line 96
+    :cond_2
+    invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p0
+
+    .line 100
+    throw p0
+.end method
+
+.method protected static I9(Ljava/lang/Class;Lcom/google/crypto/tink/shaded/protobuf/l1;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "clazz",
+            "defaultInstance"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "**>;>(",
+            "Ljava/lang/Class<",
+            "TT;>;TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->b9()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1;->defaultInstanceMap:Ljava/util/Map;
+
+    .line 5
+    .line 6
+    invoke-interface {v0, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method private static K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;)TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p0, :cond_1
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->R()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/a;->O6()Lcom/google/crypto/tink/shaded/protobuf/q4;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/q4;->a()Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/t1;->l(Lcom/google/crypto/tink/shaded/protobuf/q2;)Lcom/google/crypto/tink/shaded/protobuf/t1;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    throw p0
+
+    .line 23
+    :cond_1
+    :goto_0
+    return-object p0
+.end method
+
+.method protected static L8()Lcom/google/crypto/tink/shaded/protobuf/s1$a;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/q;->l()Lcom/google/crypto/tink/shaded/protobuf/q;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method protected static M8()Lcom/google/crypto/tink/shaded/protobuf/s1$b;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/f0;->l()Lcom/google/crypto/tink/shaded/protobuf/f0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method protected static N8()Lcom/google/crypto/tink/shaded/protobuf/s1$f;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/h1;->l()Lcom/google/crypto/tink/shaded/protobuf/h1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method protected static O8()Lcom/google/crypto/tink/shaded/protobuf/s1$g;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/r1;->l()Lcom/google/crypto/tink/shaded/protobuf/r1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method protected static P8()Lcom/google/crypto/tink/shaded/protobuf/s1$j;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/h2;->l()Lcom/google/crypto/tink/shaded/protobuf/h2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method protected static Q8()Lcom/google/crypto/tink/shaded/protobuf/s1$l;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Lcom/google/crypto/tink/shaded/protobuf/s1$l<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/l3;->f()Lcom/google/crypto/tink/shaded/protobuf/l3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method private R8()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/s4;->c()Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    if-ne v0, v1, :cond_0
+
+    .line 8
+    .line 9
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/s4;->o()Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 14
+    .line 15
+    :cond_0
+    return-void
+.end method
+
+.method static S8(Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "**>;>(",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1;->defaultInstanceMap:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 8
+    .line 9
+    if-nez v0, :cond_0
+
+    .line 10
+    .line 11
+    :try_start_0
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    const/4 v2, 0x1
+
+    .line 20
+    invoke-static {v0, v2, v1}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1;->defaultInstanceMap:Ljava/util/Map;
+
+    .line 24
+    .line 25
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :catch_0
+    move-exception p0
+
+    .line 33
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 34
+    .line 35
+    const-string v1, "Class initialization cannot fail."
+
+    .line 36
+    .line 37
+    invoke-direct {v0, v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 38
+    .line 39
+    .line 40
+    throw v0
+
+    .line 41
+    :cond_0
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 42
+    .line 43
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/w4;->l(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 48
+    .line 49
+    invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->T8()Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    if-eqz v0, :cond_1
+
+    .line 54
+    .line 55
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/l1;->defaultInstanceMap:Ljava/util/Map;
+
+    .line 56
+    .line 57
+    invoke-interface {v1, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 58
+    .line 59
+    .line 60
+    return-object v0
+
+    .line 61
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    .line 62
+    .line 63
+    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    .line 64
+    .line 65
+    .line 66
+    throw p0
+
+    .line 67
+    :cond_2
+    return-object v0
+.end method
+
+.method static varargs V8(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "clazz",
+            "name",
+            "params"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1, p2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :catch_0
+    move-exception p2
+
+    .line 7
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 8
+    .line 9
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v2, "Generated message class \""
+
+    .line 15
+    .line 16
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string p0, "\" missing method \""
+
+    .line 27
+    .line 28
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string p0, "\"."
+
+    .line 35
+    .line 36
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p0
+
+    .line 43
+    invoke-direct {v0, p0, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 44
+    .line 45
+    .line 46
+    throw v0
+.end method
+
+.method static varargs X8(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "object",
+            "params"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :catch_0
+    move-exception p0
+
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    instance-of p1, p0, Ljava/lang/RuntimeException;
+
+    .line 12
+    .line 13
+    if-nez p1, :cond_1
+
+    .line 14
+    .line 15
+    instance-of p1, p0, Ljava/lang/Error;
+
+    .line 16
+    .line 17
+    if-eqz p1, :cond_0
+
+    .line 18
+    .line 19
+    check-cast p0, Ljava/lang/Error;
+
+    .line 20
+    .line 21
+    throw p0
+
+    .line 22
+    :cond_0
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 23
+    .line 24
+    const-string p2, "Unexpected exception thrown by generated accessor method."
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 27
+    .line 28
+    .line 29
+    throw p1
+
+    .line 30
+    :cond_1
+    check-cast p0, Ljava/lang/RuntimeException;
+
+    .line 31
+    .line 32
+    throw p0
+
+    .line 33
+    :catch_1
+    move-exception p0
+
+    .line 34
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 35
+    .line 36
+    const-string p2, "Couldn\'t use Java reflection to implement protocol message reflection."
+
+    .line 37
+    .line 38
+    invoke-direct {p1, p2, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 39
+    .line 40
+    .line 41
+    throw p1
+.end method
+
+.method protected static final Y8(Lcom/google/crypto/tink/shaded/protobuf/l1;Z)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "shouldMemoize"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;Z)Z"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->GET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Byte;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Byte;->byteValue()B
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    const/4 v1, 0x1
+
+    .line 14
+    if-ne v0, v1, :cond_0
+
+    .line 15
+    .line 16
+    return v1
+
+    .line 17
+    :cond_0
+    if-nez v0, :cond_1
+
+    .line 18
+    .line 19
+    const/4 p0, 0x0
+
+    .line 20
+    return p0
+
+    .line 21
+    :cond_1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->b(Ljava/lang/Object;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-eqz p1, :cond_3
+
+    .line 34
+    .line 35
+    sget-object p1, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->SET_MEMOIZED_IS_INITIALIZED:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 36
+    .line 37
+    if-eqz v0, :cond_2
+
+    .line 38
+    .line 39
+    move-object v1, p0
+
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_2
+    const/4 v1, 0x0
+
+    .line 42
+    :goto_0
+    invoke-virtual {p0, p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->J8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    :cond_3
+    return v0
+.end method
+
+.method static synthetic c7(Lcom/google/crypto/tink/shaded/protobuf/t0;)Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->B7(Lcom/google/crypto/tink/shaded/protobuf/t0;)Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private c8(Lcom/google/crypto/tink/shaded/protobuf/r3;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nullableSchema"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/crypto/tink/shaded/protobuf/r3<",
+            "*>;)I"
+        }
+    .end annotation
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-interface {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->e(Ljava/lang/Object;)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    return p1
+
+    .line 16
+    :cond_0
+    invoke-interface {p1, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->e(Ljava/lang/Object;)I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    return p1
+.end method
+
+.method protected static f9(Lcom/google/crypto/tink/shaded/protobuf/s1$a;)Lcom/google/crypto/tink/shaded/protobuf/s1$a;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$a;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$a;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method protected static g9(Lcom/google/crypto/tink/shaded/protobuf/s1$b;)Lcom/google/crypto/tink/shaded/protobuf/s1$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$b;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$b;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method protected static h9(Lcom/google/crypto/tink/shaded/protobuf/s1$f;)Lcom/google/crypto/tink/shaded/protobuf/s1$f;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$f;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$f;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method protected static i9(Lcom/google/crypto/tink/shaded/protobuf/s1$g;)Lcom/google/crypto/tink/shaded/protobuf/s1$g;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$g;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$g;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method static synthetic j7(Lcom/google/crypto/tink/shaded/protobuf/l1;[BIILcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2, p3, p4}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G9(Lcom/google/crypto/tink/shaded/protobuf/l1;[BIILcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method protected static j9(Lcom/google/crypto/tink/shaded/protobuf/s1$j;)Lcom/google/crypto/tink/shaded/protobuf/s1$j;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$j;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$j;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method protected static k9(Lcom/google/crypto/tink/shaded/protobuf/s1$l;)Lcom/google/crypto/tink/shaded/protobuf/s1$l;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/google/crypto/tink/shaded/protobuf/s1$l<",
+            "TE;>;)",
+            "Lcom/google/crypto/tink/shaded/protobuf/s1$l<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0xa
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    mul-int/lit8 v0, v0, 0x2
+
+    .line 11
+    .line 12
+    :goto_0
+    invoke-interface {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s1$l;->a(I)Lcom/google/crypto/tink/shaded/protobuf/s1$l;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method
+
+.method protected static m9(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "info",
+            "objects"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/n3;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/n3;-><init>(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static o9(Lcom/google/crypto/tink/shaded/protobuf/q2;Lcom/google/crypto/tink/shaded/protobuf/q2;Lcom/google/crypto/tink/shaded/protobuf/s1$d;ILcom/google/crypto/tink/shaded/protobuf/a5$b;ZLjava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "containingTypeDefaultInstance",
+            "messageDefaultInstance",
+            "enumTypeMap",
+            "number",
+            "type",
+            "isPacked",
+            "singularType"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<ContainingType::",
+            "Lcom/google/crypto/tink/shaded/protobuf/q2;",
+            "Type:",
+            "Ljava/lang/Object;",
+            ">(TContainingType;",
+            "Lcom/google/crypto/tink/shaded/protobuf/q2;",
+            "Lcom/google/crypto/tink/shaded/protobuf/s1$d<",
+            "*>;I",
+            "Lcom/google/crypto/tink/shaded/protobuf/a5$b;",
+            "Z",
+            "Ljava/lang/Class;",
+            ")",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$h<",
+            "TContainingType;TType;>;"
+        }
+    .end annotation
+
+    .line 1
+    move-object v1, p2
+
+    .line 2
+    sget-object p2, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    .line 3
+    .line 4
+    move v2, p3
+
+    .line 5
+    move-object p3, p1
+
+    .line 6
+    move-object p1, p0
+
+    .line 7
+    new-instance p0, Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+
+    .line 8
+    .line 9
+    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/l1$g;
+
+    .line 10
+    .line 11
+    const/4 v4, 0x1
+
+    .line 12
+    move-object v3, p4
+
+    .line 13
+    move v5, p5
+
+    .line 14
+    invoke-direct/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/l1$g;-><init>(Lcom/google/crypto/tink/shaded/protobuf/s1$d;ILcom/google/crypto/tink/shaded/protobuf/a5$b;ZZ)V
+
+    .line 15
+    .line 16
+    .line 17
+    move-object p5, p6
+
+    .line 18
+    move-object p4, v0
+
+    .line 19
+    invoke-direct/range {p0 .. p5}, Lcom/google/crypto/tink/shaded/protobuf/l1$h;-><init>(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/q2;Lcom/google/crypto/tink/shaded/protobuf/l1$g;Ljava/lang/Class;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object p0
+.end method
+
+.method public static p9(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/q2;Lcom/google/crypto/tink/shaded/protobuf/s1$d;ILcom/google/crypto/tink/shaded/protobuf/a5$b;Ljava/lang/Class;)Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "containingTypeDefaultInstance",
+            "defaultValue",
+            "messageDefaultInstance",
+            "enumTypeMap",
+            "number",
+            "type",
+            "singularType"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<ContainingType::",
+            "Lcom/google/crypto/tink/shaded/protobuf/q2;",
+            "Type:",
+            "Ljava/lang/Object;",
+            ">(TContainingType;TType;",
+            "Lcom/google/crypto/tink/shaded/protobuf/q2;",
+            "Lcom/google/crypto/tink/shaded/protobuf/s1$d<",
+            "*>;I",
+            "Lcom/google/crypto/tink/shaded/protobuf/a5$b;",
+            "Ljava/lang/Class;",
+            ")",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$h<",
+            "TContainingType;TType;>;"
+        }
+    .end annotation
+
+    .line 1
+    move-object v1, p3
+
+    .line 2
+    move-object p3, p2
+
+    .line 3
+    move-object p2, p1
+
+    .line 4
+    move-object p1, p0
+
+    .line 5
+    new-instance p0, Lcom/google/crypto/tink/shaded/protobuf/l1$h;
+
+    .line 6
+    .line 7
+    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/l1$g;
+
+    .line 8
+    .line 9
+    const/4 v4, 0x0
+
+    .line 10
+    const/4 v5, 0x0
+
+    .line 11
+    move v2, p4
+
+    .line 12
+    move-object v3, p5
+
+    .line 13
+    invoke-direct/range {v0 .. v5}, Lcom/google/crypto/tink/shaded/protobuf/l1$g;-><init>(Lcom/google/crypto/tink/shaded/protobuf/s1$d;ILcom/google/crypto/tink/shaded/protobuf/a5$b;ZZ)V
+
+    .line 14
+    .line 15
+    .line 16
+    move-object p5, p6
+
+    .line 17
+    move-object p4, v0
+
+    .line 18
+    invoke-direct/range {p0 .. p5}, Lcom/google/crypto/tink/shaded/protobuf/l1$h;-><init>(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/q2;Lcom/google/crypto/tink/shaded/protobuf/l1$g;Ljava/lang/Class;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-object p0
+.end method
+
+.method protected static q9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/io/InputStream;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->C9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method protected static r9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/io/InputStream;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->C9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method protected static s9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/u;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/u;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->t9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/u;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method protected static t9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/u;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/u;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->D9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/u;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method protected static u9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/z;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->v9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method protected static v9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Lcom/google/crypto/tink/shaded/protobuf/z;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method protected static w9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/io/InputStream;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/z;->k(Ljava/io/InputStream;)Lcom/google/crypto/tink/shaded/protobuf/z;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+.end method
+
+.method protected static x9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/io/InputStream;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/io/InputStream;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/z;->k(Ljava/io/InputStream;)Lcom/google/crypto/tink/shaded/protobuf/z;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->F9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method protected static y9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/nio/ByteBuffer;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/nio/ByteBuffer;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/v0;->d()Lcom/google/crypto/tink/shaded/protobuf/v0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->z9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/nio/ByteBuffer;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method protected static z9(Lcom/google/crypto/tink/shaded/protobuf/l1;Ljava/nio/ByteBuffer;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultInstance",
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TT;*>;>(TT;",
+            "Ljava/nio/ByteBuffer;",
+            "Lcom/google/crypto/tink/shaded/protobuf/v0;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/crypto/tink/shaded/protobuf/t1;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/z;->o(Ljava/nio/ByteBuffer;)Lcom/google/crypto/tink/shaded/protobuf/z;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {p0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/l1;->v9(Lcom/google/crypto/tink/shaded/protobuf/l1;Lcom/google/crypto/tink/shaded/protobuf/z;Lcom/google/crypto/tink/shaded/protobuf/v0;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    invoke-static {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K7(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+
+# virtual methods
+.method protected G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "method"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, p1, v0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p1
+
+    .line 6
+    return-object p1
+.end method
+
+.method protected H9(ILcom/google/crypto/tink/shaded/protobuf/z;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tag",
+            "input"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/a5;->b(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x4
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    return p1
+
+    .line 10
+    :cond_0
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->R8()V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/s4;->i(ILcom/google/crypto/tink/shaded/protobuf/z;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    return p1
+.end method
+
+.method protected J8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .annotation build Lcom/google/crypto/tink/shaded/protobuf/x;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "arg0"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, p1, p2, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p1
+
+    .line 6
+    return-object p1
+.end method
+
+.method J9(I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method protected abstract K8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "arg0",
+            "arg1"
+        }
+    .end annotation
+.end method
+
+.method public final K9()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TBuilderType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->NEW_BUILDER:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/l1$b;->k9(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    return-object v0
+.end method
+
+.method L7()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method O7()V
+    .locals 1
+
+    .line 1
+    const v0, 0x7fffffff
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Q6(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method Q6(I)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
+
+    .line 1
+    if-ltz p1, :cond_0
+
+    .line 2
+    .line 3
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 4
+    .line 5
+    const/high16 v1, -0x80000000
+
+    .line 6
+    .line 7
+    and-int/2addr v0, v1
+
+    .line 8
+    const v1, 0x7fffffff
+
+    .line 9
+    .line 10
+    .line 11
+    and-int/2addr p1, v1
+
+    .line 12
+    or-int/2addr p1, v0
+
+    .line 13
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 17
+    .line 18
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v2, "serialized size must be non-negative, was "
+
+    .line 24
+    .line 25
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 36
+    .line 37
+    .line 38
+    throw v0
+.end method
+
+.method public final R()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-static {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Y8(Lcom/google/crypto/tink/shaded/protobuf/l1;Z)Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    return v0
+.end method
+
+.method public final T8()Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TMessageType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->GET_DEFAULT_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public bridge synthetic U0()Lcom/google/crypto/tink/shaded/protobuf/q2;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->T8()Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method U8()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/a;->memoizedHashCode:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public bridge synthetic W0()Lcom/google/crypto/tink/shaded/protobuf/q2$a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->K9()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method W8()Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->U8()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
+.end method
+
+.method public Y0()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->s(Lcom/google/crypto/tink/shaded/protobuf/r3;)I
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    return v0
+.end method
+
+.method Y7()I
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->g(Ljava/lang/Object;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method Z8()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 2
+    .line 3
+    const/high16 v1, -0x80000000
+
+    .line 4
+    .line 5
+    and-int/2addr v0, v1
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const/4 v0, 0x1
+
+    .line 9
+    return v0
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    return v0
+.end method
+
+.method protected a9()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-interface {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/r3;->d(Ljava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->b9()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public bridge synthetic b1()Lcom/google/crypto/tink/shaded/protobuf/q2$a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->l9()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method b9()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 2
+    .line 3
+    const v1, 0x7fffffff
+
+    .line 4
+    .line 5
+    .line 6
+    and-int/2addr v0, v1
+
+    .line 7
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method protected c9(ILcom/google/crypto/tink/shaded/protobuf/u;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fieldNumber",
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->R8()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/s4;->l(ILcom/google/crypto/tink/shaded/protobuf/u;)Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method protected final d9(Lcom/google/crypto/tink/shaded/protobuf/s4;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "unknownFields"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p1}, Lcom/google/crypto/tink/shaded/protobuf/s4;->n(Lcom/google/crypto/tink/shaded/protobuf/s4;Lcom/google/crypto/tink/shaded/protobuf/s4;)Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method protected final e8()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<MessageType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TMessageType;TBuilderType;>;BuilderType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$b<",
+            "TMessageType;TBuilderType;>;>()TBuilderType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->NEW_BUILDER:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method protected e9(II)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tag",
+            "value"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->R8()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->unknownFields:Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1, p2}, Lcom/google/crypto/tink/shaded/protobuf/s4;->m(II)Lcom/google/crypto/tink/shaded/protobuf/s4;
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 6
+    if-nez p1, :cond_1
+
+    .line 7
+    .line 8
+    return v0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    if-eq v1, v2, :cond_2
+
+    .line 18
+    .line 19
+    return v0
+
+    .line 20
+    :cond_2
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 29
+    .line 30
+    invoke-interface {v0, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/r3;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p1
+
+    .line 34
+    return p1
+.end method
+
+.method public final f1()Lcom/google/crypto/tink/shaded/protobuf/h3;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/crypto/tink/shaded/protobuf/h3<",
+            "TMessageType;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->GET_PARSER:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/h3;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Z8()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Y7()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    return v0
+
+    .line 12
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->W8()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-eqz v0, :cond_1
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Y7()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->J9(I)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->U8()I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    return v0
+.end method
+
+.method l7()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->BUILD_MESSAGE_INFO:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final l9()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TBuilderType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->NEW_BUILDER:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method n9()Lcom/google/crypto/tink/shaded/protobuf/l1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TMessageType;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/l1$i;->NEW_MUTABLE_INSTANCE:Lcom/google/crypto/tink/shaded/protobuf/l1$i;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->G8(Lcom/google/crypto/tink/shaded/protobuf/l1$i;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/l1;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method r()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/l1;->memoizedSerializedSize:I
+
+    .line 2
+    .line 3
+    const v1, 0x7fffffff
+
+    .line 4
+    .line 5
+    .line 6
+    and-int/2addr v0, v1
+
+    .line 7
+    return v0
+.end method
+
+.method s(Lcom/google/crypto/tink/shaded/protobuf/r3;)I
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "schema"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Z8()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    invoke-direct {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->c8(Lcom/google/crypto/tink/shaded/protobuf/r3;)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    if-ltz p1, :cond_0
+
+    .line 12
+    .line 13
+    return p1
+
+    .line 14
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 15
+    .line 16
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 19
+    .line 20
+    .line 21
+    const-string v2, "serialized size must be non-negative, was "
+
+    .line 22
+    .line 23
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    throw v0
+
+    .line 37
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->r()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    const v1, 0x7fffffff
+
+    .line 42
+    .line 43
+    .line 44
+    if-eq v0, v1, :cond_2
+
+    .line 45
+    .line 46
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->r()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result p1
+
+    .line 50
+    return p1
+
+    .line 51
+    :cond_2
+    invoke-direct {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->c8(Lcom/google/crypto/tink/shaded/protobuf/r3;)I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p1
+
+    .line 55
+    invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/l1;->Q6(I)V
+
+    .line 56
+    .line 57
+    .line 58
+    return p1
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/s2;->f(Lcom/google/crypto/tink/shaded/protobuf/q2;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public u8(Lcom/google/crypto/tink/shaded/protobuf/b0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/k3;->a()Lcom/google/crypto/tink/shaded/protobuf/k3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p0}, Lcom/google/crypto/tink/shaded/protobuf/k3;->j(Ljava/lang/Object;)Lcom/google/crypto/tink/shaded/protobuf/r3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {p1}, Lcom/google/crypto/tink/shaded/protobuf/c0;->T(Lcom/google/crypto/tink/shaded/protobuf/b0;)Lcom/google/crypto/tink/shaded/protobuf/c0;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    invoke-interface {v0, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/r3;->j(Ljava/lang/Object;Lcom/google/crypto/tink/shaded/protobuf/c5;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method protected final w8(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prototype"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<MessageType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1<",
+            "TMessageType;TBuilderType;>;BuilderType:",
+            "Lcom/google/crypto/tink/shaded/protobuf/l1$b<",
+            "TMessageType;TBuilderType;>;>(TMessageType;)TBuilderType;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/l1;->e8()Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p1}, Lcom/google/crypto/tink/shaded/protobuf/l1$b;->k9(Lcom/google/crypto/tink/shaded/protobuf/l1;)Lcom/google/crypto/tink/shaded/protobuf/l1$b;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method

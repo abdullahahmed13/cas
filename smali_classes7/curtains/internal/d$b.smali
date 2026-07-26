@@ -1,0 +1,99 @@
+.class final Lcurtains/internal/d$b;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcurtains/internal/d;->onDraw()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Lcurtains/internal/d;
+
+
+# direct methods
+.method constructor <init>(Lcurtains/internal/d;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcurtains/internal/d$b;->d:Lcurtains/internal/d;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcurtains/internal/d$b;->d:Lcurtains/internal/d;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcurtains/internal/d;->a(Lcurtains/internal/d;)Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-string v1, "viewTreeObserver"
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/l0;->o(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    if-eqz v1, :cond_0
+
+    .line 21
+    .line 22
+    iget-object v1, p0, Lcurtains/internal/d$b;->d:Lcurtains/internal/d;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    return-void
+.end method

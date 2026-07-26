@@ -1,0 +1,229 @@
+.class final Lio/reactivex/internal/operators/flowable/h3$a;
+.super Lio/reactivex/internal/operators/flowable/h3$c;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/reactivex/internal/operators/flowable/h3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lio/reactivex/internal/operators/flowable/h3$c<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final l:J = -0x2a0bdab9530de829L
+
+
+# instance fields
+.field final j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+.field volatile k:Z
+
+
+# direct methods
+.method constructor <init>(Lorg/reactivestreams/d;Lorg/reactivestreams/c;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/reactivestreams/d<",
+            "-TT;>;",
+            "Lorg/reactivestreams/c<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lio/reactivex/internal/operators/flowable/h3$c;-><init>(Lorg/reactivestreams/d;Lorg/reactivestreams/c;)V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 5
+    .line 6
+    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lio/reactivex/internal/operators/flowable/h3$a;->j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method b()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->k:Z
+
+    .line 3
+    .line 4
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/h3$c;->e()V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$c;->d:Lorg/reactivestreams/d;
+
+    .line 16
+    .line 17
+    invoke-interface {v0}, Lorg/reactivestreams/d;->onComplete()V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_0
+    return-void
+.end method
+
+.method d()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->k:Z
+
+    .line 3
+    .line 4
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/h3$c;->e()V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$c;->d:Lorg/reactivestreams/d;
+
+    .line 16
+    .line 17
+    invoke-interface {v0}, Lorg/reactivestreams/d;->onComplete()V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_0
+    return-void
+.end method
+
+.method g()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_2
+
+    .line 8
+    .line 9
+    :cond_0
+    iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->k:Z
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/h3$c;->e()V
+
+    .line 12
+    .line 13
+    .line 14
+    if-eqz v0, :cond_1
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$c;->d:Lorg/reactivestreams/d;
+
+    .line 17
+    .line 18
+    invoke-interface {v0}, Lorg/reactivestreams/d;->onComplete()V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    :cond_1
+    iget-object v0, p0, Lio/reactivex/internal/operators/flowable/h3$a;->j:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    if-nez v0, :cond_0
+
+    .line 29
+    .line 30
+    :cond_2
+    return-void
+.end method
