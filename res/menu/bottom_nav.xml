@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_bottom_nav_home" android:id="@id/nav_tab_home" android:title="@string/navigation_label_home" />
+    <item android:icon="@drawable/ic_bottom_nav_rewards" android:id="@id/nav_tab_rewards" android:title="@string/navigation_label_rewards" />
+    <item android:icon="@drawable/ic_bottom_nav_order" android:id="@id/nav_tab_order_menu" android:title="@string/navigation_label_order" />
+    <item android:icon="@drawable/ic_bottom_nav_messages" android:id="@id/nav_sf_inbox_messages" android:title="@string/inbox_messages" />
+    <item android:icon="@drawable/ic_nav_account" android:id="@id/nav_tab_account" android:title="@string/navigation_label_account" />
+</menu>

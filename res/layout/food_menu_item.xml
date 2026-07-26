@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/food_menu_item_0" android:background="?selectableItemBackground" android:padding="@dimen/margin_standard_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/imageContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="w,11:13" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/subMenuImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <ImageView android:id="@id/dividerLine" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitXY" android:contentDescription="@null" app:layout_constraintBottom_toTopOf="@id/subMenuTitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:srcCompat="@null" />
+    <TextView android:textAppearance="?textAppearanceProductName" android:gravity="center" android:id="@id/subMenuTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_quarter" android:includeFontPadding="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/imageContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

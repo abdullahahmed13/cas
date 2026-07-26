@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_guest_thank_you_0" android:background="@drawable/denim_paper_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/guest_arrival_header" layout="@layout/guest_arrival_header" />
+    <TextView android:textAppearance="@style/TextAppearance.BrandontextRegular24" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_fourthirds" android:text="@string/thank_you_title" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" android:text="@string/arrival_thank_you_description" />
+    <com.caseys.commerce.customview.CtaButton android:layout_gravity="center" android:id="@id/backHomeBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:text="@string/back_to_home" android:layout_marginStart="@dimen/guest_arrival_button_margin" android:layout_marginEnd="@dimen/guest_arrival_button_margin" style="?buttonStyleCta" />
+</LinearLayout>

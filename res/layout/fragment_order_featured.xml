@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_order_featured_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/inc_order_menu_tab_bar_layout" layout="@layout/order_menu_tab_bar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/full_screen_loading_state_root" />
+</LinearLayout>

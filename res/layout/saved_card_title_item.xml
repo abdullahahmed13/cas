@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold16.Slate800" android:id="@id/saved_card_title" android:tag="layout/saved_card_title_item_0" android:paddingBottom="@dimen/dimen_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/saved_cards_header_top_margin" android:text="@string/saved_cards_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

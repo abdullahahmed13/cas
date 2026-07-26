@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_account_deletion_otp_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_16" android:layout_marginHorizontal="@dimen/dimen_16">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular18.DirtyPurple" android:id="@id/verify_number_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/verify_number_message_delete_account_with_otp" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular24.DirtyPurple" android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" />
+        <LinearLayout android:orientation="vertical" android:id="@id/otp_form_field_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_11" />
+        <com.caseys.commerce.customview.CtaButton android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold16.White" android:id="@id/btnConfirmDelete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:text="@string/verify" style="?buttonStyleCta" />
+        <Button android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14.LinkBlue" android:id="@id/resend_code_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/btn_resend_delete" style="?borderlessButtonStyleResendCode" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14.DirtyPurple" android:id="@id/customer_care_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/customer_care_message_tm_delete_account" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="@dimen/tappable_min_size" android:layout_height="@dimen/tappable_min_size" android:indeterminate="true" android:indeterminateOnly="true" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

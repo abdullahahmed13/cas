@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:paddingTop="@dimen/margin_standard_half" android:paddingBottom="@dimen/margin_standard_half" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.FontAwesomeLight.14.LinkBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fa_circle_info" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14.Blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rewards_info_label" android:layout_marginStart="@dimen/margin_standard_one_eighth" />
+</LinearLayout>

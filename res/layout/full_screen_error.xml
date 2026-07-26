@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/full_screen_error_root" android:padding="@dimen/margin_standard" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular17" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/generic_sorry_error_title" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular17" android:gravity="center" android:id="@id/display_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/generic_try_again_error_message" />
+    <Button android:id="@id/error_retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/retry" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_debug_group" android:background="#337f7f7f" android:paddingTop="@dimen/margin_standard_third" android:paddingBottom="@dimen/margin_standard_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:paddingStart="@dimen/margin_standard" android:paddingEnd="@dimen/margin_standard">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold13" android:textColor="@color/red600" android:gravity="center" android:id="@id/error_debug_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/error_debug_settings_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="@string/navigation_label_debug" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular10" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="You are using a QA build.\nThis section will not appear in Release builds." />
+    </LinearLayout>
+</LinearLayout>

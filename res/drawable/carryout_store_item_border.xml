@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ripple_rectangle" />
+    <item android:drawable="@drawable/carryout_store_item_outer_border" />
+    <item android:drawable="@drawable/carryout_store_item_inner_border" android:left="@dimen/carryout_store_item_border_width" android:top="@dimen/carryout_store_item_border_width" android:right="@dimen/carryout_store_item_border_width" android:bottom="@dimen/carryout_store_item_border_width" />
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_dob_zip_force_update" app:startDestination="@id/nav_dob_update"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/personal_information" android:name="com.caseys.commerce.ui.account.fragment.DobUpdateFragment" android:id="@id/nav_dob_update">
+        <argument android:name="isFromDobUpdate" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+</navigation>

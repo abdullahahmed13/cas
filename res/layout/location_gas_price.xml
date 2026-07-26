@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/gas_price_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:contentDescription="@string/cd_gas_price" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:textColor="@color/dirty_purple" android:id="@id/regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Regular" android:layout_marginStart="@dimen/margin_standard_third" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/gas_price_icon" />
+    <include android:id="@id/us_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_standard_one_eighth" android:layout_marginStart="@dimen/margin_standard_quarter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/regular" layout="@layout/currency_symbol" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:textColor="@color/dirty_purple" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.89" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/us_currency" />
+</androidx.constraintlayout.widget.ConstraintLayout>

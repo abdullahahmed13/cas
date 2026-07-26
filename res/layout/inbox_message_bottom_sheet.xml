@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/bottom_sheet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/margin_zero" app:cardCornerRadius="@dimen/margin_10" app:layout_behavior="@string/bottom_sheet_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/challenge_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:id="@id/btn_delete_message" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_margin" android:text="@string/inbox_message_delete" android:contentDescription="@string/inbox_message_delete" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View android:background="@color/caseys_red_2020" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_delete_message" />
+        <Button android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:id="@id/btn_cancel_message" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_margin" android:text="@string/cancel" android:contentDescription="@string/cancel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/btn_delete_message" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

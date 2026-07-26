@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/confirmed_order_info_0" android:background="@color/half_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:id="@id/checkout_confirmation_change_order_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold16" android:id="@id/checkout_confirmation_thank_you_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/checkout_order_thank_you_message" android:layout_marginStart="@dimen/margin_standard_twothirds" />
+</LinearLayout>

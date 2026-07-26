@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/dirty_purple" android:id="@id/tvAmenity" android:tag="layout/carwash_wash_options_amenity_item_0" android:padding="@dimen/dimen_5" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Hometown.Chalk.Regular16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

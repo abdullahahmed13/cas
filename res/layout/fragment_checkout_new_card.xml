@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_checkout_new_card_0" android:paddingBottom="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard_twothirds" android:paddingEnd="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="@drawable/checkout_box_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/newCardFormHeaderLayout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/add_card_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/payment_add_card_item" />
+            <ImageView android:id="@id/checkSelectedIndicator" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/checkout_payment_card_padding" android:src="@null" android:contentDescription="@string/cd_new_card_selected" android:layout_marginEnd="@dimen/margin_standard_half" />
+        </LinearLayout>
+        <include android:id="@id/new_card_content" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_checkout_new_card_contents" />
+        <CheckBox android:id="@id/save_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" android:layout_marginBottom="@dimen/margin_standard_half" android:text="@string/save_card_checkbox" android:layout_marginStart="@dimen/margin_standard_third" style="@style/Widget.Profile.CheckBoxLight" />
+    </LinearLayout>
+</FrameLayout>

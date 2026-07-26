@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_checkout_tip_0" android:padding="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/checkout_divider_height" android:scaleType="fitXY" android:importantForAccessibility="no" app:srcCompat="@null" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black16.Caps" android:id="@id/add_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:text="@string/driver_tip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/profile_widget_outline_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:layout_marginBottom="@dimen/margin_standard_twothirds" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tip_button_1" android:background="@drawable/button_background_tip_left" android:padding="@dimen/margin_standard_quarter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_percent_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_amount_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/purple_grey" android:layout_width="@dimen/checkout_payment_button_border_width" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tip_button_2" android:background="@drawable/button_background_tip_center" android:padding="@dimen/margin_standard_quarter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_percent_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_amount_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/purple_grey" android:layout_width="@dimen/checkout_payment_button_border_width" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tip_button_3" android:background="@drawable/button_background_tip_right" android:padding="@dimen/margin_standard_quarter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_percent_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/selector_tip_button_text" android:id="@id/tip_amount_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:background="@color/purple_grey" android:layout_width="@dimen/checkout_payment_button_border_width" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tip_button_4" android:background="@drawable/button_background_tip_right" android:padding="@dimen/margin_standard_quarter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:textColor="@color/selector_tip_button_text" android:id="@id/custom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/selector_tip_button_text" android:id="@id/custom_tip_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/no_tip_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_tip" />
+    <View android:background="@color/very_light_pink" android:layout_width="wrap_content" android:layout_height="@dimen/account_divider_height" android:layout_marginTop="@dimen/margin_standard_twothirds" />
+</LinearLayout>

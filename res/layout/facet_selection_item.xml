@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/selectedFacetLayout" android:tag="layout/facet_selection_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:gravity="start|center" android:id="@id/tvSelectedFacet" android:layout_width="wrap_content" android:layout_height="@dimen/tappable_min_size" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.FontAwesomeSolid.20.White" android:layout_gravity="center_vertical" android:id="@id/tvRemoveSelectedFacet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fa_cross_in_circle" android:contentDescription="@string/cd_clear_product_search_input" android:layout_marginStart="@dimen/dimen_6" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_inbox" app:startDestination="@id/inboxFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_inbox_list" android:name="com.caseys.commerce.ui.appinbox.fragment.InboxFragment" android:id="@id/inboxFragment">
+        <action android:id="@id/action_inboxFragment_to_inboxViewFragment" app:destination="@id/inboxViewFragment" />
+    </fragment>
+    <fragment android:label="fragment_inbox_view" android:name="com.caseys.commerce.fragment.InboxViewFragment" android:id="@id/inboxViewFragment">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="subject" app:argType="string" />
+    </fragment>
+</navigation>

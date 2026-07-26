@@ -1,0 +1,16 @@
+.class public interface abstract Landroidx/camera/core/impl/v3;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Landroidx/camera/core/l3;
+
+
+# annotations
+.annotation build Landroidx/camera/core/b1;
+.end annotation
+
+
+# virtual methods
+.method public abstract b(J)Landroidx/camera/core/l3;
+.end method

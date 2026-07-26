@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/rewards_qr_border" android:color="@color/rewards_qr_icon" />
+    <solid android:color="@color/white" />
+</shape>

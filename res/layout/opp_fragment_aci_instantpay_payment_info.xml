@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/opp_layout_actionbar" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/payment_button_layout" app:layout_constraintTop_toBottomOf="@id/header">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/checkout_payment_data_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="120.0dip">
+            <include android:id="@id/payment_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/opp_layout_payment_info_header" />
+            <com.oppwa.mobile.connect.checkout.dialog.InputLayout android:id="@id/account_holder_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/payment_info_header" />
+            <com.oppwa.mobile.connect.checkout.dialog.InputLayout android:id="@id/account_number_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/account_holder_input_layout" />
+            <com.oppwa.mobile.connect.checkout.dialog.InputLayout android:id="@id/routing_number_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/account_number_input_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/payment_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/opp_layout_checkout_paybutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

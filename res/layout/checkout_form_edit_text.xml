@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.caseys.commerce.customview.CustomizableTextInputLayout android:id="@id/text_input_layout" android:tag="layout/checkout_form_edit_text_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hintAnimationEnabled="true" app:hintEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16.DirtyPurple" android:id="@id/text_input_edit_text" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" />
+</com.caseys.commerce.customview.CustomizableTextInputLayout>

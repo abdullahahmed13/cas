@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.Caseys.finder" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-feature android:name="android.hardware.touchscreen"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.samsung.android.samsungpay.gear"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.HOME"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.facebook.katana"/>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="geo"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tel"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE "/>
+    <uses-permission android:name="com.hihonor.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.hihonor.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <permission android:name="com.Caseys.finder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.Caseys.finder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <permission android:name="com.Caseys.finder.RESTRICT_ACCESS" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name_long" android:largeHeap="true" android:name="com.caseys.commerce.core.CaseysApplication" android:networkSecurityConfig="@xml/network_security" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Hometown">
+        <meta-data android:name="io.fabric.ApiKey" android:value="4ced8df5235c5be771316f67f3cd68c4537265d0"/>
+        <meta-data android:name="googleClientId" android:value="@string/google_client_id_prod"/>
+        <activity android:exported="true" android:name="com.caseys.commerce.ui.carwash.RedeemActivity" android:theme="@style/Theme.CarWash.Light"/>
+        <service android:name="com.caseys.commerce.ui.carwash.utils.StoreTimerService"/>
+        <activity android:name="com.caseys.commerce.ui.order.occasion.LocationActivity"/>
+        <activity android:exported="true" android:label="@string/app_name_short" android:name="com.caseys.commerce.activity.MainActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.caseys.commerce.activity.DeepLinkLauncherActivity" android:noHistory="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.caseys.com"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:path="/"/>
+                <data android:path="/c/menu"/>
+                <data android:path="/c/menu/"/>
+                <data android:pathPrefix="/menu/"/>
+                <data android:path="/store-finder/locations"/>
+                <data android:path="/rewards"/>
+                <data android:path="/reorder"/>
+                <data android:path="/cart"/>
+                <data android:path="/charity"/>
+                <data android:path="/deals"/>
+                <data android:pathPrefix="/menu/"/>
+                <data android:path="/rewards/all-offers"/>
+                <data android:pathPrefix="/rewards/all-offers/"/>
+                <data android:path="/rewards/saved-offers"/>
+                <data android:pathPrefix="/savings"/>
+                <data android:pathPattern="/rewards/offers/..*"/>
+                <data android:path="/rewards/redeem-points"/>
+                <data android:path="/rewards/points"/>
+                <data android:path="/rewards/fueldiscount"/>
+                <data android:path="/rewards/caseyscash"/>
+                <data android:path="/rewards/challenges"/>
+                <data android:pathPrefix="/rewards/challenges/"/>
+                <data android:pathPrefix="/my-account"/>
+                <data android:pathPattern="/redeem-deal/..*"/>
+                <data android:pathPattern="/campaign/reorder/..*"/>
+                <data android:pathPattern="/guest/vehicle-details/..*"/>
+                <data android:path="/rewards/refer-friend/invite"/>
+                <data android:path="/app/inbox"/>
+                <data android:path="/summer-of-freedom"/>
+                <data android:pathPattern="/clubs/..*"/>
+                <data android:path="/unlock-offers"/>
+                <data android:path="/cart/voucher/apply"/>
+                <data android:path="/rewards/member-deals"/>
+                <data android:pathPrefix="/rewards/member-deals/"/>
+                <data android:path="/game"/>
+                <data android:path="/carwash"/>
+                <data android:path="/products-and-services/car-wash"/>
+                <data android:path="/products-and-services/car-wash/"/>
+                <data android:path="/products-and-services/car-wash/single"/>
+                <data android:path="/products-and-services/car-wash/single/"/>
+                <data android:path="/products-and-services/car-wash/subscription"/>
+                <data android:path="/products-and-services/car-wash/subscription/"/>
+                <data android:path="/products-and-services/car-wash/subscription-management"/>
+                <data android:path="/products-and-services/car-wash/subscription-management/"/>
+                <data android:path="/qrcoderedemption"/>
+                <data android:path="/qrcoderedemption/"/>
+                <data android:path="/search"/>
+                <data android:path="/addToCart"/>
+                <data android:pathPrefix="/addToCart/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link.caseys.com" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.caseys.commerce.ui.order.occasion.occasionselection.SelectStoreOccasionActivity" android:theme="@style/Theme.Hometown.Light"/>
+        <activity android:name="com.caseys.commerce.ui.carwash.CarWashCartActivity" android:theme="@style/Theme.CarWash.Light" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.caseys.commerce.ui.carwash.CarWashLocationActivity" android:theme="@style/Theme.CarWash.Light"/>
+        <activity android:name="com.caseys.commerce.ui.carwash.CarWashActivationResultActivity" android:theme="@style/Theme.CarWash.Light"/>
+        <activity android:name="com.caseys.commerce.ui.order.pdp.PdpActivity" android:theme="@style/Theme.Hometown"/>
+        <activity android:name="com.caseys.commerce.ui.order.cart.CartActivity" android:theme="@style/Theme.Hometown" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.caseys.commerce.activity.InboxTestActivity"/>
+        <activity android:name="com.caseys.commerce.ui.checkout.CheckoutActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.ui.order.occasion.editoccasionselection.EditSelectedOccasionActivity" android:theme="@style/Theme.Hometown.Light"/>
+        <activity android:name="com.caseys.commerce.ui.rewards.RewardsActivity" android:theme="@style/Theme.Profile.Light.Rebrand2020" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.caseys.commerce.ui.account.MyProfileSubItemsActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.ui.rewards.StandaloneOffersActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.ui.order.guidedselling.GuidedSellingActivity" android:theme="@style/Theme.Hometown"/>
+        <activity android:name="com.caseys.commerce.ui.account.ContactInfoActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:launchMode="singleInstance" android:name="com.caseys.commerce.activity.ForcedPersonalInfoChangeActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.activity.ForcedDobZipChangeActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.activity.ForceUpdateActivity" android:theme="@style/Theme.Hometown.Transparent"/>
+        <activity android:name="com.caseys.commerce.ui.account.ChangeFavoriteStoreActivity" android:theme="@style/Theme.Hometown.Light"/>
+        <activity android:name="com.caseys.commerce.ui.home.futureorder.FutureOrderSummaryActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.ui.home.guestarrival.CurbsideGuestArrivalActivity" android:theme="@style/Theme.Profile.Light"/>
+        <activity android:name="com.caseys.commerce.activity.ReferFriendActivity" android:theme="@style/Theme.Profile.Light.Rebrand2020"/>
+        <activity android:name="com.caseys.commerce.ui.rewards.PersonalChallengeDetailsActivity" android:theme="@style/Theme.Profile.Light.Rebrand2020"/>
+        <activity android:name="com.caseys.commerce.ui.sfinbox.SFInboxActivity" android:theme="@style/Theme.Hometown"/>
+        <activity android:name="com.caseys.commerce.ui.sweepstakesinfo.SweepStakesInfoActivity" android:theme="@style/Theme.Hometown"/>
+        <activity android:name="com.caseys.commerce.ui.gamecomponent.GameComponentActivity" android:theme="@style/Theme.Hometown"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name_long" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|density|layoutDirection|fontScale" android:hardwareAccelerated="true" android:name="io.flutter.embedding.android.FlutterActivity" android:theme="@style/Theme.Hometown" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|density|layoutDirection|fontScale" android:hardwareAccelerated="true" android:name="com.caseys.commerce.core.CaseysFlutterActivity" android:theme="@style/Theme.Hometown" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity" android:theme="@style/Theme.Checkout.Light" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="com.Caseys.finder.result" android:scheme="@string/oppwa_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.oppwa.mobile.connect.provider.AsyncPaymentActivity" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="false" android:name="com.oppwa.mobile.connect.core.nfc.ui.NfcCardReaderActivity" android:screenOrientation="portrait" android:theme="@style/Oppwa.Theme.Nfc"/>
+        <provider android:authorities="com.Caseys.finder.oppwa.init.provider" android:exported="false" android:name="com.oppwa.mobile.connect.provider.OppwaInitProvider"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:exported="false" android:name="com.rokt.roktsdk.ui.overlay.RoktModalActivity" android:theme="@style/RoktTheme.AppCompat"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:label="@string/mcsdk_notification_activity_label" android:launchMode="singleInstance" android:name="com.salesforce.marketingcloud.notifications.NotificationOpenActivity" android:taskAffinity="com.Caseys.finder.NotificationOpenActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="@string/mcsdk_iam_activity_label" android:name="com.salesforce.marketingcloud.messages.iam.IamModalActivity" android:theme="@style/McSdk.Modal"/>
+        <activity android:label="@string/mcsdk_iam_activity_label" android:name="com.salesforce.marketingcloud.messages.iam.IamBannerActivity" android:theme="@style/McSdk.Banner"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/mcsdk_iam_activity_label" android:name="com.salesforce.marketingcloud.messages.iam.IamFullscreenActivity" android:theme="@style/McSdk.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/mcsdk_iam_activity_label" android:name="com.salesforce.marketingcloud.messages.iam.IamFullImageFillActivity" android:theme="@style/McSdk.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.salesforce.marketingcloud.location.LocationReceiver"/>
+        <receiver android:exported="false" android:name="com.salesforce.marketingcloud.notifications.PushNotificationActionHandler">
+            <intent-filter>
+                <action android:name="com.salesforce.marketingcloud.notifications.CAROUSEL_NEXT"/>
+                <action android:name="com.salesforce.marketingcloud.notifications.CAROUSEL_PREVIOUS"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.MCService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.NotificationOpenedService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.MCReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.Caseys.finder.com.salesforce.marketingcloud.WAKE_FOR_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.Caseys.finder.com.salesforce.marketingcloud.initprovider" android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.MCInitContentProvider"/>
+        <service android:foregroundServiceType="location" android:name="org.altbeacon.beacon.service.BeaconService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.Caseys.finder.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.rokt.roktsdk.internal.overlay.fullscreen.FullScreenActivity" android:screenOrientation="userPortrait" android:theme="@style/Theme.RoktSdk"/>
+        <activity android:configChanges="uiMode" android:excludeFromRecents="true" android:label="" android:name="com.rokt.roktsdk.internal.overlay.lightbox.LightBoxActivity" android:theme="@style/Theme.RoktSdk.LightBox"/>
+        <activity android:configChanges="uiMode" android:excludeFromRecents="true" android:label="" android:name="com.rokt.roktsdk.internal.overlay.bottomsheet.BottomSheetActivity" android:theme="@style/Theme.RoktSdk.LightBox"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.gigya.android.sdk.ui.HostActivity" android:theme="@style/Theme.Gigya"/>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.gigya.android.sdk.ui.WebLoginActivity" android:theme="@style/Theme.Gigya">
+            <intent-filter android:label="web_login_redirect">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="gsapi" android:pathPrefix="/com.Caseys.finder/login_result" android:scheme="gigya"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.gigya.android.sdk.providers.sso.GigyaSSOLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.Caseys.finder" android:path="/login/" android:scheme="gsapi"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="org.maplibre.android.plugins.offline.ui.OfflineActivity"/>
+        <service android:exported="false" android:name="org.maplibre.android.plugins.offline.offline.OfflineDownloadService"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <provider android:authorities="com.Caseys.finder.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.Caseys.finder.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.Caseys.finder" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.Caseys.finder.com.salesforce.marketingcloud.sfmcsdk.initprovider" android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkInitContentProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.sfmcsdk.SFMCSdkJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.Caseys.finder.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.Caseys.finder.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:authorities="com.newrelic.android.agent.nrprovider.com.Caseys.finder" android:exported="false" android:initOrder="200" android:name="com.newrelic.agent.android.rum.contentprovider.NewRelicAppContentProvider"/>
+        <provider android:authorities="com.Caseys.finder.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="io.radar.sdk.RadarLocationReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="io.radar.sdk.LocationReceiver.SYNCED_GEOFENCES"/>
+                <action android:name="io.radar.sdk.LocationReceiver.GEOFENCE"/>
+                <action android:name="io.radar.sdk.LocationReceiver.LOCATION"/>
+                <action android:name="io.radar.sdk.LocationReceiver.BEACON"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="io.radar.sdk.RadarJobScheduler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:foregroundServiceType="location" android:name="io.radar.sdk.RadarForegroundService"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

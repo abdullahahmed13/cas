@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/carryout_store_item_outer_border_stroke_width" android:color="@color/store_item_dark_border" />
+</shape>

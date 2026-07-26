@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/caseys_red_2020" />
+            <size android:height="@dimen/personal_challenge_state_progress_height" android:width="@dimen/personal_challenge_state_progress_width" />
+        </shape>
+    </item>
+</layer-list>

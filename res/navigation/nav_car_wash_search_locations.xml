@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_car_wash_search_locations" app:startDestination="@id/nav_search_car_wash"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.SearchCarWashFragment" android:id="@id/nav_search_car_wash">
+        <argument android:name="requestType" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashLocationStoreDetailsFragment" android:id="@id/nav_search_car_wash_details">
+        <argument android:name="requestType" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

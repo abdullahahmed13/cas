@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_contact_info" app:startDestination="@id/nav_contact_info_controller"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.account.fragment.ContactInfoControllerFragment" android:id="@id/nav_contact_info_controller">
+        <argument android:name="launch_code" app:argType="string" />
+    </fragment>
+    <fragment android:label="@string/change_mobile_number_title" android:name="com.caseys.commerce.ui.account.fragment.PhoneNumberFragment" android:id="@id/nav_change_phone_number" />
+    <fragment android:label="@string/verify_mobile_number_title" android:name="com.caseys.commerce.ui.account.fragment.NumberVerificationFragment" android:id="@id/nav_otp_verification">
+        <argument android:name="phone_number" app:argType="string" />
+        <argument android:name="sms_optin" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="@string/change_email_title" android:name="com.caseys.commerce.ui.account.fragment.ChangeEmailFragment" android:id="@id/nav_change_email" />
+    <fragment android:label="@string/personal_information" android:name="com.caseys.commerce.ui.account.fragment.DobUpdateFragment" android:id="@id/nav_dob_update">
+        <argument android:name="isFromDobUpdate" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+</navigation>

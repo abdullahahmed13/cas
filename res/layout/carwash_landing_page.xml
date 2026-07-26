@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/pullToRefreshLayout" android:tag="layout/carwash_landing_page_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/iLBanner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" layout="@layout/car_wash_landing_purple_banner" />
+                <include android:id="@id/iLWalletSection" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/iLBanner" layout="@layout/car_wash_wallet_banner" />
+                <com.caseys.commerce.customview.CtaButton android:layout_gravity="center" android:id="@id/btnRedeemWash" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/redeem_wash" android:paddingStart="@dimen/margin_standard_fourthirds" android:paddingEnd="@dimen/margin_standard_fourthirds" app:layout_constraintBottom_toBottomOf="@id/iLWalletSection" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iLWalletSection" style="?buttonStyleCtaSmall" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/iLWalletSection">
+                    <FrameLayout android:id="@id/layout_topsection" android:background="@drawable/carwash_droplet_background" android:layout_width="fill_parent" android:layout_height="@dimen/carwash_droplets_bg_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_car_wash_landing_page_content" android:paddingTop="@dimen/dimen_27" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/car_wash_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

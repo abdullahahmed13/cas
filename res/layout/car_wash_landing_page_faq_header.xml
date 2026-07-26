@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black20" android:textColor="@color/dirty_purple" android:gravity="center_horizontal" android:id="@id/tv_car_wash_faqs_header" android:tag="layout/car_wash_landing_page_faq_header_0" android:padding="@dimen/margin_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_10" android:layout_marginEnd="@dimen/margin_10" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

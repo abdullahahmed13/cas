@@ -1,0 +1,20 @@
+{
+  "cnameList": [
+    {
+      "env": "DEV",
+      "cname": "qa1.ssosocial.caseys.com"
+    },
+    {
+      "env": "QA",
+      "cname": "qa1.ssosocial.caseys.com"
+    },
+    {
+      "env": "UAT",
+      "cname": "qa1.ssosocial.caseys.com"
+    },
+    {
+      "env": "PERF",
+      "cname": "qa1.ssosocial.caseys.com"
+    }
+  ]
+}

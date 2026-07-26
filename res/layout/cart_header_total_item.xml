@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/cart_header_total_item_0" android:paddingTop="@dimen/margin_standard_twothirds" android:paddingBottom="@dimen/margin_standard_third" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black16" android:id="@id/totalHeaderText" android:paddingTop="@dimen/margin_standard_one_eighth" android:paddingBottom="@dimen/margin_standard_one_eighth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cart_total" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_standard" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black16" android:id="@id/totalHeaderValue" android:paddingTop="@dimen/margin_standard_one_eighth" android:paddingBottom="@dimen/margin_standard_one_eighth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/margin_standard" />
+</LinearLayout>

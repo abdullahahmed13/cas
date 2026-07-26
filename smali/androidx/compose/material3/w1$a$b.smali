@@ -1,0 +1,273 @@
+.class final Landroidx/compose/material3/w1$a$b;
+.super Lkotlin/jvm/internal/n0;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Leg/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/material3/w1$a;->a(Landroidx/compose/material3/h6;Ljava/util/Locale;)Landroidx/compose/runtime/saveable/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/n0;",
+        "Leg/l<",
+        "Ljava/util/List;",
+        "Landroidx/compose/material3/w1;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic f:Landroidx/compose/material3/h6;
+
+.field final synthetic g:Ljava/util/Locale;
+
+
+# direct methods
+.method constructor <init>(Landroidx/compose/material3/h6;Ljava/util/Locale;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Landroidx/compose/material3/w1$a$b;->f:Landroidx/compose/material3/h6;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/w1$a$b;->g:Ljava/util/Locale;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x1
+
+    .line 6
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/n0;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/util/List;)Landroidx/compose/material3/w1;
+    .locals 9
+    .param p1    # Ljava/util/List;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Landroidx/compose/material3/w1;"
+        }
+    .end annotation
+
+    .annotation build Lqi/m;
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroidx/compose/material3/w1;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    check-cast v1, Ljava/lang/Long;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x1
+
+    .line 11
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    check-cast v2, Ljava/lang/Long;
+
+    .line 16
+    .line 17
+    const/4 v3, 0x2
+
+    .line 18
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v3
+
+    .line 22
+    check-cast v3, Ljava/lang/Long;
+
+    .line 23
+    .line 24
+    new-instance v4, Lkotlin/ranges/l;
+
+    .line 25
+    .line 26
+    const/4 v5, 0x3
+
+    .line 27
+    invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v5
+
+    .line 31
+    const-string v6, "null cannot be cast to non-null type kotlin.Int"
+
+    .line 32
+    .line 33
+    invoke-static {v5, v6}, Lkotlin/jvm/internal/l0;->n(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    check-cast v5, Ljava/lang/Integer;
+
+    .line 37
+    .line 38
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v5
+
+    .line 42
+    const/4 v7, 0x4
+
+    .line 43
+    invoke-interface {p1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v7
+
+    .line 47
+    invoke-static {v7, v6}, Lkotlin/jvm/internal/l0;->n(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 48
+    .line 49
+    .line 50
+    check-cast v7, Ljava/lang/Integer;
+
+    .line 51
+    .line 52
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v7
+
+    .line 56
+    invoke-direct {v4, v5, v7}, Lkotlin/ranges/l;-><init>(II)V
+
+    .line 57
+    .line 58
+    .line 59
+    const/4 v5, 0x5
+
+    .line 60
+    invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    invoke-static {p1, v6}, Lkotlin/jvm/internal/l0;->n(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 65
+    .line 66
+    .line 67
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 68
+    .line 69
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 70
+    .line 71
+    .line 72
+    move-result p1
+
+    .line 73
+    invoke-static {p1}, Landroidx/compose/material3/a2;->d(I)I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v5
+
+    .line 77
+    iget-object v6, p0, Landroidx/compose/material3/w1$a$b;->f:Landroidx/compose/material3/h6;
+
+    .line 78
+    .line 79
+    iget-object v7, p0, Landroidx/compose/material3/w1$a$b;->g:Ljava/util/Locale;
+
+    .line 80
+    .line 81
+    const/4 v8, 0x0
+
+    .line 82
+    invoke-direct/range {v0 .. v8}, Landroidx/compose/material3/w1;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Lkotlin/ranges/l;ILandroidx/compose/material3/h6;Ljava/util/Locale;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 83
+    .line 84
+    .line 85
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/w1$a$b;->a(Ljava/util/List;)Landroidx/compose/material3/w1;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

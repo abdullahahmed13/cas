@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_details" android:tag="layout/dc_car_wash_landing_page_subscription_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/subscription_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/dc_car_wash_subscription_cta" />
+    <include android:id="@id/single_subscription_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dimen_3" layout="@layout/dc_car_wash_single_cta" />
+</LinearLayout>

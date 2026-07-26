@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/input_dippings_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="start" android:id="@id/ivMinusToggle" android:background="@drawable/dipping_sauce_minus_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/cd_addon_subtract" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black16" android:gravity="center" android:layout_gravity="center" android:id="@id/tvAddOnCount" android:layout_width="@dimen/pdp_plus_minus_sauce_count_width" android:layout_height="wrap_content" android:text="@string/default_dips" android:layout_weight="1.0" />
+    <ImageButton android:layout_gravity="end" android:id="@id/ivPlusToggle" android:background="@drawable/dipping_sauce_plus_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@string/cd_addon_addition" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium12" android:textColor="@color/dirty_purple" android:id="@id/currency_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dollar_symbol"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

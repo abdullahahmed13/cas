@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_game_component_match_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_game_screen_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pbGameScreen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|bottom" android:id="@id/rv_game_cards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/store_item_location_goodstop_icon_size" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="2" />
+</FrameLayout>

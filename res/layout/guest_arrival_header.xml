@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/guest_arrival_header" android:tag="layout/guest_arrival_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:importantForAccessibility="no" />
+    <Button android:id="@id/guest_arrival_exit" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/margin_standard" android:layout_marginStart="@dimen/margin_standard" />
+</FrameLayout>

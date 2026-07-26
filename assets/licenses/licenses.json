@@ -1,0 +1,26 @@
+[
+  {
+    "licenseName": "Apache 2.0",
+    "licenseTextFile": "apache-2.txt",
+    "libNames": [
+      "Android SDK (c) The Android Open Source Project",
+      "Android Support Library (c) The Android Open Source Project",
+      "FlexboxLayout (c) Google Inc.",
+      "Retrofit (c) Square, Inc.",
+      "Moshi (c) Square, Inc.",
+      "OkHttp (c) Square, Inc.",
+      "ZXing (c) Google Open Source",
+      "CircularStatusView (c) AbdulAlim Rajjoub",
+      "Balloon (c) skydoves (Jaewoong Eum)",
+      "confetti (c) Robinhood Markets, Inc",
+      "AndroidScratchCard (c) MyInnos"
+    ]
+  },
+  {
+    "licenseName": "MIT License",
+    "licenseTextFile": "mit.txt",
+    "libNames": [
+      "RecyclerviewItemDecorations (c) David Medenjak"
+    ]
+  }
+]

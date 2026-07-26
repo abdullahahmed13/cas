@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/scratch_match_card_row_0" android:layout_width="@dimen/dimen_82" android:layout_height="@dimen/dimen_82" android:layout_marginTop="@dimen/dimen_15" android:layout_marginStart="@dimen/disruption_item_margin" android:layout_marginEnd="@dimen/disruption_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivScratchMatchCard" android:layout_width="@dimen/dimen_82" android:layout_height="@dimen/dimen_82" />
+    <in.myinnos.androidscratchcard.ScratchCard android:id="@id/scratchCard" android:clickable="false" android:longClickable="false" android:layout_width="@dimen/dimen_82" android:layout_height="@dimen/dimen_82" />
+</RelativeLayout>

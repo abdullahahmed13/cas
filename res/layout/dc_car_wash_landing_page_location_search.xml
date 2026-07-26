@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/dc_car_wash_landing_page_location_search_0" android:padding="@dimen/margin_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.FontAwesomeLight.20.Gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fa_location_dot" android:importantForAccessibility="no" />
+    <TextView android:textColor="@color/rewards_qr_icon" android:layout_gravity="center" android:id="@id/tv_car_wash_search_locations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/single_Wash_explore_cta_btn" style="@style/TextAppearance.Hometown.Chalk.Black16" />
+</LinearLayout>

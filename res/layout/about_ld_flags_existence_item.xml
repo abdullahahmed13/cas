@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/about_ld_flags_existence_item_0" android:paddingLeft="@dimen/margin_standard_twothirds" android:paddingRight="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Profile.SubMenu" android:id="@id/tvStatus" android:paddingTop="@dimen/margin_standard_half" android:paddingBottom="@dimen/margin_standard_half" android:layout_width="@dimen/dimen_0" android:layout_height="wrap_content" android:text="@string/launch_darkly_toggle_active" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

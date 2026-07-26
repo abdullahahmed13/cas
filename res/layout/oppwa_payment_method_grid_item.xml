@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?paymentMethodListItemSelector" android:layout_width="@dimen/oppwa_checkout_grouped_cards_grid_item_width" android:layout_height="@dimen/oppwa_checkout_grouped_cards_grid_item_height" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:contentDescription="@string/checkout_layout_text_cards_payment_methods" style="?checkoutMethodImageViewStyle" />
+    <ProgressBar android:id="@id/progress" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

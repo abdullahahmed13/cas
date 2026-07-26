@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/simple_promo_banner_0" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivSimpleBanner" android:layout_width="fill_parent" android:layout_height="@dimen/promo_banner_height" android:foreground="?selectableItemBackground" android:scaleType="fitXY" android:contentDescription="@string/cd_promotional_banner" />
+    <ImageView android:id="@id/ivDividerLine" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_3" android:scaleType="fitXY" android:contentDescription="@null" app:srcCompat="@null" />
+</LinearLayout>

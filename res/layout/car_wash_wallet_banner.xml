@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/car_wash_wallet_banner_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clWashWalletSection" android:background="@drawable/car_wash_wallet_bg" android:paddingBottom="@dimen/dimen_30" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold20" android:id="@id/tvWashWalletTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:text="@string/wash_wallet" android:textAllCaps="false" app:layout_constraintEnd_toEndOf="@id/rvWallet" app:layout_constraintStart_toStartOf="@id/rvWallet" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvWallet" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_10" android:layout_marginStart="@dimen/margin_standard_half" android:layout_marginEnd="@dimen/margin_standard_half" app:layout_constrainedHeight="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvWashWalletTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_transactions_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/transactions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/margin_standard_twothirds" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <include layout="@layout/full_screen_loading_state_root" />
+</FrameLayout>

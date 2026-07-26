@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_checkout" app:startDestination="@id/nav_checkout_login"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutLoginFragment" android:id="@id/nav_checkout_login">
+        <action android:id="@id/action_login_as_guest" app:destination="@id/nav_checkout_guest_form" />
+        <action android:id="@id/action_login_success" app:destination="@id/nav_checkout_hub" app:popUpTo="@id/nav_checkout_login" app:popUpToInclusive="true" />
+        <action android:id="@id/action_checkout_success" app:destination="@id/nav_checkout_confirmation" app:popUpTo="@id/nav_checkout_login" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutGuestFormFragment" android:id="@id/nav_checkout_guest_form">
+        <action android:id="@id/action_guest_form_success" app:destination="@id/nav_checkout_hub" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutTipFragment" android:id="@id/nav_checkout_tip" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutCustomTipFragment" android:id="@id/nav_checkout_custom_tip" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutCustomCaseysCashFragment" android:id="@id/nav_checkout_custom_caseys_cash" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutRedeemPointsFragment" android:id="@id/nav_checkout_custom_redeem_points" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutContainerFragment" android:id="@id/nav_checkout_hub">
+        <action android:id="@id/action_checkout_success" app:destination="@id/nav_checkout_confirmation" app:popUpTo="@id/nav_checkout_login" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutConfirmationFragment" android:id="@id/nav_checkout_confirmation" />
+    <activity android:name="com.caseys.commerce.ui.order.occasion.editoccasionselection.EditSelectedOccasionActivity" android:id="@id/nav_edit_selected_occasion" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutGiftCardHelpFragment" android:id="@id/nav_checkout_gift_card_help" />
+</navigation>

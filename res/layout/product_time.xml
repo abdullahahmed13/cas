@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Profile.Light" android:orientation="horizontal" android:tag="layout/product_time_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start|top" android:id="@id/day_availability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/week_column_min_height" />
+    <TextView android:gravity="start|top" android:id="@id/time_availability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/time_column_max_width" />
+</LinearLayout>

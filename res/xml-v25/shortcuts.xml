@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_money" android:enabled="true" android:shortcutId="shortcutDeals" android:shortcutShortLabel="@string/deals" android:shortcutLongLabel="@string/deals">
+        <intent android:targetPackage="com.caseys.appdev" android:action="android.intent.action.VIEW" android:data="shortcutDealsData" android:targetClass="com.caseys.commerce.activity.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_orderpizza" android:enabled="true" android:shortcutId="shortcutStartOrder" android:shortcutShortLabel="@string/order" android:shortcutLongLabel="@string/order">
+        <intent android:targetPackage="com.caseys.appdev" android:action="android.intent.action.VIEW" android:data="shortcutOrderData" android:targetClass="com.caseys.commerce.activity.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_your_offer_shortcut" android:enabled="true" android:shortcutId="shortcutYourOffers" android:shortcutShortLabel="@string/your_offers" android:shortcutLongLabel="@string/your_offers">
+        <intent android:targetPackage="com.caseys.appdev" android:action="android.intent.action.VIEW" android:data="shortcutYourOffersData" android:targetClass="com.caseys.commerce.activity.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_qrcode" android:enabled="true" android:shortcutId="shortcutScanRewards" android:shortcutShortLabel="@string/scan_your_rewards" android:shortcutLongLabel="@string/scan_your_rewards">
+        <intent android:targetPackage="com.caseys.appdev" android:action="android.intent.action.VIEW" android:data="shortcutScanRewardsData" android:targetClass="com.caseys.commerce.activity.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/fragment_guest_car_maker_0" android:background="@drawable/denim_paper_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/guest_arrival_header" layout="@layout/guest_arrival_header" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black18" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_fourthirds" android:text="@string/car_maker_title" android:textAllCaps="true" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:text="@string/car_maker_description" android:lines="2" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="-4.0dip">
+                <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/car_maker_vehicle_color" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/vehicle_color_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_fourthirds" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_quarter">
+                <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/car_maker_vehicle_type" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/vehicle_type_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_fourthirds" android:text="@string/car_maker_vehicle_make_model" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds" />
+            <EditText android:id="@id/car_maker_make_model_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:hint="@string/car_maker_vehicle_make_model_hint" android:maxLength="100" android:inputType="none" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds" android:importantForAutofill="no" />
+            <com.caseys.commerce.customview.CtaButton android:enabled="false" android:layout_gravity="center" android:id="@id/notifyStoreBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_double_standard" android:layout_marginBottom="150.0dip" android:text="@string/notify_store" android:layout_marginStart="@dimen/guest_arrival_button_margin" android:layout_marginEnd="@dimen/guest_arrival_button_margin" style="?buttonStyleCta" />
+        </LinearLayout>
+        <include android:id="@id/loading_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/stores_error_margin_top" layout="@layout/stores_screen_loading" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:gravity="start" android:id="@id/saved_card_limit_disclaimer" android:tag="layout/saved_cards_footer_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/saved_cards_disclaimer_top_margin" android:text="@string/max_payment_cards_limit_disclaimer"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

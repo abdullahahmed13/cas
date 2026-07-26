@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_redeem_car_wash" app:startDestination="@id/nav_choose_wash"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ChooseWashFragment" android:id="@id/nav_choose_wash">
+        <argument android:name="qrCodeRedemptionData" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.carwash.model.QrCodeRedemptionModel" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ScannerFragment" android:id="@id/nav_car_wash_scanner_fragment">
+        <argument android:name="walletType" app:argType="string" app:nullable="true" />
+        <argument android:name="subcriptionWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletSubscriptionSection" app:nullable="true" />
+        <argument android:name="singleWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletGroupedSinglesSection" app:nullable="true" />
+        <argument android:name="qrCodeRedemptionData" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.carwash.model.QrCodeRedemptionModel" app:nullable="true" />
+    </fragment>
+</navigation>

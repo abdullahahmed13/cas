@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Profile.Light" android:orientation="vertical" android:id="@id/guest_user_sub_item_layout" android:tag="layout/rewards_guest_user_sub_item_0" android:paddingBottom="@dimen/dimen_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_rewards_sub_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/TextAppearance.Hometown.FontAwesomeLight.86.Red" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold18.DirtyPurple" android:id="@id/rewards_sub_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16.DirtyPurple" android:id="@id/rewards_sub_item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" />
+</LinearLayout>

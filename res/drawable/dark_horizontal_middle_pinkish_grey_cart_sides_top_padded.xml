@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/divider_thin_gradient_dark" android:insetLeft="@dimen/order_summary_thin_divider_padding" android:insetRight="@dimen/order_summary_thin_divider_padding" android:insetTop="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

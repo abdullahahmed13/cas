@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Hometown.Light" android:id="@id/fl_root" android:tag="layout/fragment_checkout_gift_card_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/add_gift_card" layout="@layout/payment_add_gift_card_item" />
+    <include android:id="@id/gift_card_without_pin" android:visibility="gone" layout="@layout/gift_card_without_pin" />
+    <include android:id="@id/gift_card_with_amount_applied" android:visibility="gone" layout="@layout/gift_card_with_amount_applied" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_gift_card" android:layout_width="@dimen/tappable_min_size" android:layout_height="@dimen/tappable_min_size" android:indeterminate="true" android:indeterminateOnly="true" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

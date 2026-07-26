@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular13.Red" android:id="@id/message" android:tag="layout/view_disclaimer_message_0" android:background="@drawable/disclaimer_message_store_item_border" android:padding="@dimen/margin_standard_third" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/carryout_store_item_view_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

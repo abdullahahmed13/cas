@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Profile.Light" android:layout_gravity="center" android:orientation="vertical" android:tag="layout/no_message_inbox_section_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold24" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:text="@string/no_inbox_msgs" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:text="@string/no_inbox_msgs_description" android:layout_marginStart="@dimen/no_messages_screen_description_margin" android:layout_marginEnd="@dimen/no_messages_screen_description_margin" />
+    <com.caseys.commerce.customview.CtaButton android:layout_gravity="center_horizontal" android:id="@id/no_messages_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20" android:minHeight="40.0dip" android:paddingStart="@dimen/margin_standard_fourthirds" android:paddingEnd="@dimen/margin_standard_fourthirds" style="@style/Widget.Hometown.CtaButton" />
+</LinearLayout>

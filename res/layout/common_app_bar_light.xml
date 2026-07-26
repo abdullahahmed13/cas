@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/topAppBar" android:tag="layout/common_app_bar_light_0" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Design.AppBarLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.caseys.commerce.customview.TitleLogoToolbar android:theme="@style/ThemeOverlay.Hometown.Light.ActionBar" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:logoId="@id/logo" app:titleId="@id/title">
+        <TextView android:textAppearance="?textAppearancePageName" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:accessibilityHeading="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/cd_caseys_general_store" android:accessibilityHeading="true" app:srcCompat="@null" />
+    </com.caseys.commerce.customview.TitleLogoToolbar>
+</com.google.android.material.appbar.AppBarLayout>

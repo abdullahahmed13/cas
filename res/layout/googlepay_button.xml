@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/googlepay_button_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0sp" android:contentDescription="@string/googlepay_button_content_description"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+        <ImageView android:paddingLeft="24.0sp" android:paddingTop="11.0sp" android:paddingRight="24.0sp" android:paddingBottom="11.0sp" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/googlepay_button_content" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/googlepay_text_content_description" android:paddingHorizontal="24.0sp" android:paddingVertical="11.0sp" />
+    </LinearLayout>
+    <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/googlepay_button_overlay" android:scaleType="fitXY" android:contentDescription="@string/googlepay_overlay_content_description" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/guest_form_scrollview" android:tag="layout/fragment_checkout_guest_form_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/margin_standard" android:paddingBottom="@dimen/margin_standard" android:fitsSystemWindows="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard_twothirds" android:paddingEnd="@dimen/margin_standard_twothirds">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold16.Caps" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_out_as_guest" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/guest_checkout_info_request" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textStyle="italic" android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/all_fields_required" />
+        <LinearLayout android:orientation="vertical" android:id="@id/form_fields" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:text="@string/i_want_to_receive_special_offers_from_caseys" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third">
+            <CheckBox android:id="@id/email_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email" android:layout_weight="5.0" />
+            <CheckBox android:id="@id/sms_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_message" android:layout_weight="6.0" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/sms_consent_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="10.0dip" android:text="@string/sms_consent_message" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/checkout_consent_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/checkout_consent_message" />
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard">
+            <com.caseys.commerce.customview.CtaButton android:id="@id/continue_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_" style="?buttonStyleCta" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/submit_info_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+        </FrameLayout>
+        <View android:background="@color/slate100" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:text="@string/checkout_sign_up_message" />
+        <Button android:textAppearance="@style/TextAppearance.Hometown.Button.Tertiary" android:layout_gravity="center_horizontal" android:id="@id/create_account_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="@string/create_an_account" style="?borderlessButtonStyle" />
+    </LinearLayout>
+</ScrollView>

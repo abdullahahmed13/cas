@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/nav_tab_home"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <activity android:name="com.caseys.commerce.ui.order.pdp.PdpActivity" android:id="@id/nav_pdp">
+        <argument android:name="editMode" app:argType="boolean" />
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" />
+    </activity>
+    <activity android:name="com.caseys.commerce.ui.order.occasion.occasionselection.SelectStoreOccasionActivity" android:id="@id/nav_select_store_occasion">
+        <argument android:name="occasionName" app:argType="string" app:nullable="true" />
+        <argument android:name="storeIdentifier" app:argType="com.caseys.commerce.ui.order.occasion.stores.model.StoreIdentifier" app:nullable="true" />
+        <argument android:name="mode" app:argType="integer" app:nullable="false" />
+        <argument android:name="fromOccasionDeepLink" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="occasionTitle" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </activity>
+    <activity android:label="@string/navigation_label_account" android:name="com.caseys.commerce.ui.order.cart.CartActivity" android:id="@id/nav_cart">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="true" />
+    </activity>
+    <fragment android:label="@string/navigation_label_account" android:name="com.caseys.commerce.ui.order.cart.fragment.CartFragment" android:id="@id/nav_cart_fragment">
+        <argument android:name="orderCode" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="errorMessage" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="productBundle" android:defaultValue="@null" app:argType="string[]" app:nullable="true" />
+        <argument android:name="fromCartIconClick" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <activity android:label="@string/rewards_home_fragment_title" android:name="com.caseys.commerce.ui.rewards.PersonalChallengeDetailsActivity" android:id="@id/nav_personal_challenge_details">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.rewards.fragment.PersonalChallengeDetailsFragment" android:id="@id/nav_personal_challenge_details_fragment">
+        <argument android:name="challengeDetailsState" app:argType="com.caseys.commerce.ui.rewards.model.PersonalChallengeDetailsModel" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.rewards.fragment.PersonalChallengesFragment" android:id="@id/nav_personal_challenges">
+        <action android:id="@id/action_personal_challenge_details" app:destination="@id/nav_personal_challenge_details" />
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.ui.order.occasion.editoccasionselection.EditSelectedOccasionActivity" android:id="@id/nav_edit_selected_occasion" />
+    <activity android:label="@string/rewards_home_fragment_title" android:name="com.caseys.commerce.ui.rewards.RewardsActivity" android:id="@id/nav_rewards">
+        <argument android:name="startingFragment" app:argType="integer" />
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="true" />
+    </activity>
+    <activity android:label="@string/navigation_label_order" android:name="com.caseys.commerce.ui.order.guidedselling.GuidedSellingActivity" android:id="@id/nav_guided_selling">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="false" />
+    </activity>
+    <activity android:label="@string/navigation_label_order" android:name="com.caseys.commerce.ui.home.futureorder.FutureOrderSummaryActivity" android:id="@id/nav_future_order" />
+    <activity android:label="@string/navigation_label_guest_arrival" android:name="com.caseys.commerce.ui.home.guestarrival.CurbsideGuestArrivalActivity" android:id="@id/nav_guest_arrival">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="true" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.home.guestarrival.fragment.GuestCarMakerFragment" android:id="@id/nav_guest_car_maker_fragment">
+        <argument android:name="customerName" app:argType="string" app:nullable="true" />
+        <argument android:name="orderCode" app:argType="string" />
+        <argument android:name="fromDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_home" android:name="com.caseys.commerce.ui.home.fragment.HomeFragment" android:id="@id/nav_tab_home" />
+    <fragment android:label="@string/navigation_label_rewards" android:name="com.caseys.commerce.ui.rewards.fragment.RewardsHomeFragment" android:id="@id/nav_tab_rewards">
+        <argument android:name="fromDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="clubId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="fromMemberDealsDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="offerUUId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="fromMemberDealDetailsDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="isPointsHistoryDeeplink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="challengeId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="offerModel" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.rewards.model.OfferModel" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/menu" android:name="com.caseys.commerce.ui.order.menu.fragment.FoodMenuFragment" android:id="@id/nav_tab_order_menu">
+        <argument android:name="subMenuCode" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="occasion" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_sub_menu" app:destination="@id/nav_sub_menu" />
+        <action android:id="@id/action_plp_menu" app:destination="@id/nav_plp_menu" />
+        <action android:id="@id/action_order_reorder" app:destination="@id/nav_tab_order_reorder" app:popUpTo="@id/nav_tab_order_menu" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_deals" app:destination="@id/nav_tab_order_deals" app:popUpTo="@id/nav_tab_order_menu" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/featured" android:name="com.caseys.commerce.ui.order.featured.fragment.FeaturedOrderFragment" android:id="@id/nav_tab_order_featured">
+        <action android:id="@id/action_order_menu" app:destination="@id/nav_tab_order_menu" app:popUpTo="@id/nav_tab_order_featured" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_deals" app:destination="@id/nav_tab_order_deals" app:popUpTo="@id/nav_tab_order_featured" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_reorder" app:destination="@id/nav_tab_order_reorder" app:popUpTo="@id/nav_tab_order_featured" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/deals" android:name="com.caseys.commerce.ui.order.deals.fragment.DealsOrderFragment" android:id="@id/nav_tab_order_deals">
+        <action android:id="@id/action_order_menu" app:destination="@id/nav_tab_order_menu" app:popUpTo="@id/nav_tab_order_deals" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_featured" app:destination="@id/nav_tab_order_featured" app:popUpTo="@id/nav_tab_order_deals" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_reorder" app:destination="@id/nav_tab_order_reorder" app:popUpTo="@id/nav_tab_order_deals" app:popUpToInclusive="true" />
+        <argument android:name="isFromOrderTab" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="groupCode" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/deals" android:name="com.caseys.commerce.ui.order.deals.fragment.ViewAllDealsFragment" android:id="@id/nav_section_deals" />
+    <fragment android:label="@string/featured" android:name="com.caseys.commerce.ui.order.reorder.fragment.ReorderOrderFragment" android:id="@id/nav_tab_order_reorder">
+        <action android:id="@id/action_order_menu" app:destination="@id/nav_tab_order_menu" app:popUpTo="@id/nav_tab_order_reorder" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_featured" app:destination="@id/nav_tab_order_featured" app:popUpTo="@id/nav_tab_order_reorder" app:popUpToInclusive="true" />
+        <action android:id="@id/action_order_deals" app:destination="@id/nav_tab_order_deals" app:popUpTo="@id/nav_tab_order_reorder" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_find_a_caseys" android:name="com.caseys.commerce.fragment.LocationsFragment" android:id="@id/nav_tab_locations">
+        <action android:id="@id/action_tab_home" app:destination="@id/nav_tab_home" />
+        <action android:id="@id/action_tab_order" app:destination="@id/nav_tab_order_menu" />
+        <action android:id="@id/action_tab_profile" app:destination="@id/nav_tab_account" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_account" android:name="com.caseys.commerce.ui.account.fragment.ProfileSwitcherFragment" android:id="@id/nav_tab_account">
+        <action android:id="@id/action_tab_home" app:destination="@id/nav_tab_home" />
+        <action android:id="@id/action_tab_order" app:destination="@id/nav_tab_order_menu" />
+        <action android:id="@id/action_tab_locations" app:destination="@id/nav_tab_locations" />
+        <argument android:name="fromDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/menu" android:name="com.caseys.commerce.ui.order.menu.fragment.SubMenuFragment" android:id="@id/nav_sub_menu">
+        <action android:id="@id/action_plp_menu" app:destination="@id/nav_plp_menu" />
+        <argument android:name="subMenuCode" app:argType="string" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_order" android:name="com.caseys.commerce.ui.order.plp.fragment.PlpFragment" android:id="@id/nav_plp_menu">
+        <action android:id="@id/action_customize_product" app:destination="@id/nav_pdp" />
+        <argument android:name="menuCode" app:argType="string" app:nullable="true" />
+        <argument android:name="filterProducts" app:argType="string[]" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_order" android:name="com.caseys.commerce.ui.order.pdp.fragment.PdpFragment" android:id="@id/nav_pdp_fragment">
+        <argument android:name="customizationState" app:argType="com.caseys.commerce.ui.order.pdp.model.ProductCustomizationState" />
+        <argument android:name="selectedTabId" app:argType="integer" />
+        <argument android:name="analyticsData" app:argType="android.os.Bundle" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.order.occasion.stores.fragment.StoreMapFragment" android:id="@id/StorefinderMapFragment" />
+    <fragment android:label="@string/navigation_label_debug" android:name="com.caseys.commerce.ui.account.fragment.DebugSettingsFragment" android:id="@id/nav_debug" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashLandingPageFragment" android:id="@id/nav_car_wash">
+        <argument android:name="qrCodeRedemptionData" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.carwash.model.QrCodeRedemptionModel" app:nullable="true" />
+        <argument android:name="deeplinkSubscription" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.SubscriptionCarWashFragment" android:id="@id/nav_subscription_car_wash" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.SubscriptionCarWashTermsFragment" android:id="@id/nav_subscription_car_wash_terms">
+        <argument android:name="CarWashCartEntryJson" app:argType="com.caseys.commerce.remote.json.cart.request.CarWashCartEntryJson" app:nullable="false" />
+        <action android:id="@id/action_nav_subscription_car_wash_terms_to_nav_car_wash_activity" app:destination="@id/nav_car_wash_activity" app:popUpTo="@id/nav_car_wash" app:popUpToInclusive="false" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.ui.carwash.CarWashCartActivity" android:id="@id/nav_car_wash_activity" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.SingleCarWashFragment" android:id="@id/nav_single_car_wash">
+        <action android:id="@id/action_nav_subscription_car_wash_terms_to_nav_car_wash_activity" app:destination="@id/nav_car_wash_activity" app:popUpTo="@id/nav_car_wash" app:popUpToInclusive="false" />
+    </fragment>
+    <activity android:label="@string/navigation_label_find_a_caseys" android:name="com.caseys.commerce.ui.carwash.CarWashLocationActivity" android:id="@id/nav_car_wash_locations_activity">
+        <argument android:name="requestType" android:defaultValue="" app:argType="string" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.dialog.LoadErrorDialogFragment" android:id="@id/error_dialog">
+        <argument android:name="loadError" app:argType="com.caseys.commerce.data.LoadError" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.dialog.GenericDialogFragment" android:id="@id/generic_dialog">
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="message" app:argType="string" app:nullable="false" />
+        <argument android:name="htmlMessage" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.dialog.AlertDialogFragment" android:id="@id/alert_dialog">
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="message" app:argType="string" app:nullable="false" />
+        <argument android:name="positiveLabel" app:argType="string" app:nullable="true" />
+        <argument android:name="negativeLabel" app:argType="string" app:nullable="true" />
+        <argument android:name="htmlMessage" app:argType="boolean" />
+        <argument android:name="cancellable" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.LocationsFragment" android:id="@id/nav_locations" />
+    <fragment android:label="@string/navigation_label_account" android:name="com.caseys.commerce.ui.account.fragment.MyProfileFragment" android:id="@id/nav_my_profile">
+        <argument android:name="fromDeepLink" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_my_personal_info" android:name="com.caseys.commerce.ui.account.fragment.MyPersonalInfoFragment" android:id="@id/nav_my_personal_info" />
+    <fragment android:label="@string/transactions" android:name="com.caseys.commerce.ui.account.fragment.TransactionsFragment" android:id="@id/nav_transactions" />
+    <fragment android:label="@string/navigation_label_age_restricted_offers" android:name="com.caseys.commerce.ui.rewards.fragment.RewardsPreferencesFragment" android:id="@id/nav_age_restricted_offers">
+        <argument android:name="fromSignup" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <activity android:label="@string/navigation_label_find_a_caseys" android:name="com.caseys.commerce.ui.order.occasion.LocationActivity" android:id="@id/nav_location_icon" />
+    <activity android:label="@string/inbox_messages" android:name="com.caseys.commerce.ui.sfinbox.SFInboxActivity" android:id="@id/nav_sf_inbox">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.sfinbox.fragment.SFInboxFragment" android:id="@id/nav_sf_inbox_messages">
+        <action android:id="@id/action_inbox_to_detailFragment" app:destination="@id/nav_sf_inbox_details" app:popUpTo="@id/nav_sf_inbox_messages" app:popUpToInclusive="true" />
+        <argument android:name="url" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="fromDeepLink" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+        <argument android:name="fromAccountsTab" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.sfinbox.fragment.SFInboxDetailsFragment" android:id="@id/nav_sf_inbox_details">
+        <action android:id="@id/action_detail_to_inboxFragment" app:destination="@id/nav_sf_inbox_messages" app:popUpTo="@id/nav_sf_inbox_details" app:popUpToInclusive="true" />
+    </fragment>
+    <activity android:label="@string/summer_of_freedom" android:name="com.caseys.commerce.ui.sweepstakesinfo.SweepStakesInfoActivity" android:id="@id/nav_sweepstake_info" />
+    <activity android:name="com.caseys.commerce.ui.order.occasion.editoccasionselection.EditSelectedOccasionActivity" android:id="@id/nav_edit_selected_occasion" />
+    <fragment android:name="com.caseys.commerce.fragment.LocationStoreDetailsFragment" android:id="@id/nav_store_details">
+        <argument android:name="pageType" app:argType="integer" />
+        <argument android:name="storeIdentifier" app:argType="com.caseys.commerce.ui.order.occasion.stores.model.StoreIdentifier" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.activity.ReferFriendActivity" android:id="@id/nav_refer_friend_invite" />
+    <fragment android:label="@string/offer_code" android:name="com.caseys.commerce.ui.rewards.fragment.UnlockOfferFragment" android:id="@id/nav_unlock_offers_fragment">
+        <argument android:name="fromUnlockOffers" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/rewards_offers_title" android:name="com.caseys.commerce.ui.rewards.fragment.OffersFragment" android:id="@id/nav_offers_fragment">
+        <argument android:name="tab_position" app:argType="integer" />
+        <argument android:name="offer_uuid" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="selected_category" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="offer_source" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="offerModel" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.rewards.model.OfferModel" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/offer_details_title" android:name="com.caseys.commerce.ui.rewards.fragment.OfferDetailsFragment" android:id="@id/nav_offer_details">
+        <argument android:name="dataMode" app:argType="com.caseys.commerce.ui.rewards.fragment.OfferDetailsFragment$DataMode" app:nullable="false" />
+        <argument android:name="fromExternalDeepLink" app:argType="boolean" app:nullable="false" />
+        <argument android:name="offer_source" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="isFromHomeScreen" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <activity android:label="" android:name="com.caseys.commerce.ui.gamecomponent.GameComponentActivity" android:id="@id/nav_game_component">
+        <argument android:name="startingFragment" app:argType="integer" />
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="true" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.gamecomponent.fragment.GameComponentIdleFragment" android:id="@id/nav_game_component_fragment">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" app:nullable="true" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.ui.carwash.RedeemActivity" android:id="@id/nav_redeem_car_wash">
+        <argument android:name="qrCodeRedemptionData" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.carwash.model.QrCodeRedemptionModel" app:nullable="true" />
+        <argument android:name="startingFragment" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="fragmentArgs" android:defaultValue="@null" app:argType="android.os.Bundle" app:nullable="true" />
+        <argument android:name="isFromSingleWashDetails" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ManageSubscriptionFragment" android:id="@id/manage_subscription_fragment">
+        <argument android:name="subcriptionWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletSubscriptionSection" app:nullable="true" />
+        <argument android:name="qrCodeRedemptionData" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.carwash.model.QrCodeRedemptionModel" app:nullable="true" />
+        <argument android:name="isFromCarWashLandingPage" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ConfirmCancelFragment" android:id="@id/confirm_cancel_fragment" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ConfirmedCancelFragment" android:id="@id/confirmed_cancel_fragment">
+        <argument android:name="orderNumber" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashPaymentMethodsFragment" android:id="@id/nav_car_wash_payment_fragment" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashAddCreditCardFragment" android:id="@id/nav_car_wash_add_card_fragment" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.SingleWashDetailsFragment" android:id="@id/nav_single_wash_details">
+        <argument android:name="washWalletGroupedSinglesSection" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletGroupedSinglesSection" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.order.productsearch.fragment.ProductSearchFragment" android:id="@id/nav_product_search_fragment">
+        <argument android:name="navigateFrom" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="searchText" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/dc_car_wash_faq_points_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center" android:id="@id/iv_serial_number" android:layout_width="@dimen/dimen_27" android:layout_height="@dimen/dimen_27" android:layout_margin="@dimen/margin_standard_quarter" android:layout_centerVertical="true" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:textColor="@color/dirty_purple" android:id="@id/tv_faq_answer" android:padding="@dimen/margin_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_15" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_serial_number" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

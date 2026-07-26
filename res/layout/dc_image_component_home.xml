@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/Theme.Profile.Light" android:id="@id/clImageComponent" android:tag="layout/dc_image_component_home_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivImageComponent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.Hometown.Chalk.Bold24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

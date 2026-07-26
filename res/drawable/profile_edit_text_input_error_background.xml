@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/dimen_6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@color/white" />
+        <stroke android:width="@dimen/dimen_1" android:color="@color/text_field_error_state" />
+        <corners android:radius="@dimen/dimen_4" />
+        <padding android:left="@dimen/dimen_13" android:top="@dimen/dimen_6" android:right="@dimen/dimen_13" android:bottom="@dimen/dimen_6" />
+    </shape>
+</inset>

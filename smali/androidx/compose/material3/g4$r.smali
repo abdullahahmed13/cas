@@ -1,0 +1,123 @@
+.class final Landroidx/compose/material3/g4$r;
+.super Lkotlin/jvm/internal/n0;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Leg/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/material3/g4;->c(JLeg/a;ZLandroidx/compose/runtime/w;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/n0;",
+        "Leg/l<",
+        "Landroidx/compose/ui/semantics/y;",
+        "Lkotlin/x2;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic f:Ljava/lang/String;
+
+.field final synthetic g:Leg/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Leg/a<",
+            "Lkotlin/x2;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;Leg/a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Leg/a<",
+            "Lkotlin/x2;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/compose/material3/g4$r;->f:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Landroidx/compose/material3/g4$r;->g:Leg/a;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x1
+
+    .line 6
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/n0;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Landroidx/compose/ui/semantics/y;
+
+    invoke-virtual {p0, p1}, Landroidx/compose/material3/g4$r;->invoke(Landroidx/compose/ui/semantics/y;)V
+
+    sget-object p1, Lkotlin/x2;->a:Lkotlin/x2;
+
+    return-object p1
+.end method
+
+.method public final invoke(Landroidx/compose/ui/semantics/y;)V
+    .locals 3
+    .param p1    # Landroidx/compose/ui/semantics/y;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 2
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/v;->S1(Landroidx/compose/ui/semantics/y;F)V
+
+    .line 3
+    iget-object v0, p0, Landroidx/compose/material3/g4$r;->f:Ljava/lang/String;
+
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/v;->o1(Landroidx/compose/ui/semantics/y;Ljava/lang/String;)V
+
+    .line 4
+    new-instance v0, Landroidx/compose/material3/g4$r$a;
+
+    iget-object v1, p0, Landroidx/compose/material3/g4$r;->g:Leg/a;
+
+    invoke-direct {v0, v1}, Landroidx/compose/material3/g4$r$a;-><init>(Leg/a;)V
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v2, v0, v1, v2}, Landroidx/compose/ui/semantics/v;->J0(Landroidx/compose/ui/semantics/y;Ljava/lang/String;Leg/a;ILjava/lang/Object;)V
+
+    return-void
+.end method

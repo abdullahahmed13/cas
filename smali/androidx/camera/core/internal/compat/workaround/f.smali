@@ -1,0 +1,57 @@
+.class public final synthetic Landroidx/camera/core/internal/compat/workaround/f;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# instance fields
+.field public final synthetic d:Landroidx/camera/core/internal/compat/workaround/g;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/camera/core/internal/compat/workaround/g;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/camera/core/internal/compat/workaround/f;->d:Landroidx/camera/core/internal/compat/workaround/g;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/camera/core/internal/compat/workaround/f;->d:Landroidx/camera/core/internal/compat/workaround/g;
+
+    .line 2
+    .line 3
+    check-cast p1, Landroidx/camera/core/impl/w3$f;
+
+    .line 4
+    .line 5
+    check-cast p2, Landroidx/camera/core/impl/w3$f;
+
+    .line 6
+    .line 7
+    invoke-static {v0, p1, p2}, Landroidx/camera/core/internal/compat/workaround/g;->a(Landroidx/camera/core/internal/compat/workaround/g;Landroidx/camera/core/impl/w3$f;Landroidx/camera/core/impl/w3$f;)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    return p1
+.end method

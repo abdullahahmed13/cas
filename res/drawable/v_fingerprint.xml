@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:scaleX="0.738" android:scaleY="0.738" android:translateX="12.0" android:translateY="12.4">
+        <group android:translateX="33.0" android:translateY="34.0">
+            <path android:pathData="@string/fp_path1" android:strokeColor="@color/color_fingerprint" android:strokeWidth="1.45" android:strokeLineCap="round" android:strokeAlpha="1.0" />
+            <path android:pathData="@string/fp_path2" android:strokeColor="@color/color_fingerprint" android:strokeWidth="1.45" android:strokeLineCap="round" android:strokeAlpha="1.0" />
+            <path android:pathData="@string/fp_path3" android:strokeColor="@color/color_fingerprint" android:strokeWidth="1.45" android:strokeLineCap="round" android:strokeAlpha="1.0" />
+            <path android:pathData="@string/fp_path4" android:strokeColor="@color/color_fingerprint" android:strokeWidth="1.45" android:strokeLineCap="round" android:strokeAlpha="1.0" />
+            <group android:translateX="-97.5" android:translateY="-142.5">
+                <path android:pathData="@string/fp_path5" android:strokeColor="@color/color_fingerprint" android:strokeWidth="1.45" android:strokeLineCap="round" android:strokeAlpha="1.0" />
+            </group>
+        </group>
+    </group>
+</vector>

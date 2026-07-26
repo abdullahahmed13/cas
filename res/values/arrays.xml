@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="about_policies">
+        <item>Privacy policy</item>
+        <item>Terms &amp; conditions</item>
+        <item>Software licenses</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="dates">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="emv_aids_array">
+        <item>A0000000031010</item>
+        <item>A0000000032010</item>
+        <item>A0000000032020</item>
+        <item>A0000000038010</item>
+        <item>A0000000041010</item>
+        <item>A0000000049999</item>
+        <item>A0000000043060</item>
+        <item>A0000000046000</item>
+        <item>A0000000048002</item>
+        <item>A0000000050001</item>
+        <item>A00000002501</item>
+        <item>A00000079001</item>
+        <item>A0000000011010</item>
+        <item>A0000000980840</item>
+        <item>A0000000042203</item>
+        <item>A0000001524010</item>
+        <item>A000000817002001</item>
+        <item>A0000000291010</item>
+        <item>A0000000421010</item>
+        <item>A0000000422010</item>
+        <item>A0000000651010</item>
+        <item>A0000001211010</item>
+        <item>A0000001214711</item>
+        <item>A0000001214712</item>
+        <item>A0000001410001</item>
+        <item>A0000001523010</item>
+        <item>A0000001544442</item>
+        <item>A0000002281010</item>
+        <item>A0000002771010</item>
+        <item>A0000003241010</item>
+        <item>A000000333010101</item>
+        <item>A000000333010102</item>
+        <item>A000000333010103</item>
+        <item>A000000333010106</item>
+        <item>A0000003591010028001</item>
+        <item>A00000035910100380</item>
+        <item>A0000003710001</item>
+        <item>A0000004391010</item>
+        <item>A0000005241010</item>
+        <item>A0000006300101</item>
+        <item>A0000006582010</item>
+        <item>A0000006581010</item>
+        <item>A0000004360100</item>
+        <item>A00000038410</item>
+        <item>A00000038420</item>
+        <item>A000000337301000</item>
+        <item>A000000337101000</item>
+        <item>A000000337102000</item>
+        <item>A000000337101001</item>
+        <item>A000000337102001</item>
+        <item>A000000337601001</item>
+        <item>A000000732100123</item>
+        <item>A0000005291010</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>

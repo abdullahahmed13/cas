@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/activity_root" android:tag="layout/activity_sliding_bottom_sheet_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/slidingBottomSheet" layout="@layout/sliding_bottom_sheet" />
+    <include android:layout_gravity="top" android:id="@id/topAppBar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/common_app_bar_light" />
+</FrameLayout>

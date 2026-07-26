@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_redeem_car_wash" app:startDestination="@id/nav_white_box_site"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.ICSStoreFragment" android:id="@id/nav_ics_site">
+        <argument android:name="walletType" app:argType="string" app:nullable="true" />
+        <argument android:name="subcriptionWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletSubscriptionSection" app:nullable="true" />
+        <argument android:name="singleWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletGroupedSinglesSection" app:nullable="true" />
+        <argument android:name="code" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.WhiteBoxSiteFragment" android:id="@id/nav_white_box_site">
+        <argument android:name="walletType" app:argType="string" app:nullable="true" />
+        <argument android:name="subcriptionWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletSubscriptionSection" app:nullable="true" />
+        <argument android:name="singleWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletGroupedSinglesSection" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.AttendantSiteFragment" android:id="@id/nav_attendant_site">
+        <argument android:name="walletType" app:argType="string" app:nullable="true" />
+        <argument android:name="subcriptionWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletSubscriptionSection" app:nullable="true" />
+        <argument android:name="singleWalletData" app:argType="com.caseys.commerce.ui.carwash.model.WashWalletGroupedSinglesSection" app:nullable="true" />
+    </fragment>
+</navigation>

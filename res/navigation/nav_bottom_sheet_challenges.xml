@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_bottom_sheet_challenges" app:startDestination="@id/nav_personal_challenges"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <activity android:label="@string/rewards_home_fragment_title" android:name="com.caseys.commerce.ui.rewards.PersonalChallengeDetailsActivity" android:id="@id/nav_personal_challenge_details">
+        <argument android:name="fragmentArgs" app:argType="android.os.Bundle" />
+    </activity>
+    <fragment android:name="com.caseys.commerce.ui.rewards.fragment.PersonalChallengesFragment" android:id="@id/nav_personal_challenges">
+        <action android:id="@id/action_personal_challenge_details" app:destination="@id/nav_personal_challenge_details_fragment" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.rewards.fragment.PersonalChallengeDetailsFragment" android:id="@id/nav_personal_challenge_details_fragment">
+        <argument android:name="challengeDetailsState" app:argType="com.caseys.commerce.ui.rewards.model.PersonalChallengeDetailsModel" />
+    </fragment>
+</navigation>

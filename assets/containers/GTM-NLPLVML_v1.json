@@ -1,0 +1,51 @@
+﻿{
+    "exportFormatVersion": 2,
+    "exportTime": "2020-07-07 18:52:24",
+    "containerVersion": {
+        "path": "accounts/134902478/containers/12053175/versions/1",
+        "accountId": "134902478",
+        "containerId": "12053175",
+        "containerVersionId": "1",
+        "name": "Publish",
+        "container": {
+            "path": "accounts/134902478/containers/12053175",
+            "accountId": "134902478",
+            "containerId": "12053175",
+            "name": "Casey's Mobile App - Android - Prod",
+            "publicId": "GTM-NLPLVML",
+            "usageContext": [
+                "ANDROID_SDK_5"
+            ],
+            "fingerprint": "1559154698489",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/134902478/containers/12053175/workspaces?apiLink=container"
+        },
+        "builtInVariable": [
+            {
+                "accountId": "134902478",
+                "containerId": "12053175",
+                "type": "APP_ID",
+                "name": "App ID"
+            },
+            {
+                "accountId": "134902478",
+                "containerId": "12053175",
+                "type": "APP_NAME",
+                "name": "App Name"
+            },
+            {
+                "accountId": "134902478",
+                "containerId": "12053175",
+                "type": "APP_VERSION_CODE",
+                "name": "App Version Code"
+            },
+            {
+                "accountId": "134902478",
+                "containerId": "12053175",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            }
+        ],
+        "fingerprint": "1559154698473",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/134902478/containers/12053175/versions/1?apiLink=version"
+    }
+}

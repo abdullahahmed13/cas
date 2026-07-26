@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Profile.SubMenu" android:gravity="center" android:id="@id/title" android:tag="layout/about_version_item_0" android:padding="@dimen/margin_standard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

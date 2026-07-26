@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/full_screen_loading_helper_root" android:background="?android:windowBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/full_screen_state_switcher" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/full_screen_error" />
+        <include layout="@layout/full_screen_loading" />
+    </FrameLayout>
+</ScrollView>

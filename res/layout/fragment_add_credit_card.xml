@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_add_credit_card_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_20" android:paddingEnd="@dimen/margin_20">
+        <include android:id="@id/new_card_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_checkout_new_card_contents" />
+        <CheckBox android:id="@id/cb_default_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:text="@string/default_card_checkbox" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/new_card_content" style="@style/Widget.Profile.CheckBoxLight" />
+        <com.caseys.commerce.customview.CtaButton android:enabled="false" android:id="@id/btn_save_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_35" android:text="@string/save_card" android:paddingStart="@dimen/dimen_35" android:paddingEnd="@dimen/dimen_35" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cb_default_card" style="?buttonStyleCta" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_80" />
+</FrameLayout>

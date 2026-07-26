@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/addressLineHolder" android:tag="layout/address_suggestion_item_0" android:background="?selectableItemBackground" android:paddingTop="@dimen/margin_standard_third" android:paddingBottom="@dimen/margin_standard_third" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold15" android:textColor="@color/dirty_purple" android:ellipsize="end" android:id="@id/addressLine1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/slate300" android:ellipsize="end" android:id="@id/addressLine2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_sweepstake_info" app:startDestination="@id/nav_sweepstakes_details_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.sweepstakesinfo.fragment.SweepStakeInfoFragment" android:id="@id/nav_sweepstakes_details_fragment" />
+    <activity android:name="com.caseys.commerce.activity.ReferFriendActivity" android:id="@id/nav_refer_friend_invite" />
+</navigation>

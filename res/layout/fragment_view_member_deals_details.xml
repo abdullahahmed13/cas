@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/content" android:tag="layout/fragment_view_member_deals_details_0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_member_deal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="@dimen/rewards_offer_banner_height" app:srcCompat="@drawable/ic_image_load" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold20" android:id="@id/tv_member_deal_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_standard_twothirds" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14.Secondary" android:id="@id/tv_member_deal_expiration_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_standard_twothirds" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/tv_member_deal_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_standard_twothirds" />
+        <RelativeLayout android:gravity="bottom" android:id="@id/fl_member_deal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14" android:textColor="@color/challenge_reward_status_text" android:gravity="center|bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:layout_marginBottom="@dimen/margin_standard" android:text="@string/member_deal" android:layout_marginStart="@dimen/rewards_offer_save_btn_margin" android:layout_marginEnd="@dimen/rewards_offer_save_btn_margin" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/checkout_payment_button_border_radius" />
+    <stroke android:width="@dimen/checkout_payment_button_border_width" android:color="@color/disabled_payment_color_border" />
+    <solid android:color="@color/disabled_payment_color_overlay" />
+</shape>

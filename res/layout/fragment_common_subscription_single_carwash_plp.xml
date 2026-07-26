@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:tag="layout/fragment_common_subscription_single_carwash_plp_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvCarwashPlpContent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/rvCarwashPlpContent">
+            <com.caseys.commerce.customview.CtaButton android:id="@id/btnSignInToPurchase" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_10" android:layout_marginBottom="@dimen/margin_20" android:text="@string/sign_in_to_purchase" android:layout_marginStart="@dimen/dimen_15" android:layout_marginEnd="@dimen/dimen_15" style="?buttonStyleCtaSmall" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/pbCarWashPlpProgressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

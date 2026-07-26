@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_offers" app:startDestination="@id/nav_offers_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/rewards_offers_title" android:name="com.caseys.commerce.ui.rewards.fragment.OffersFragment" android:id="@id/nav_offers_fragment">
+        <argument android:name="tab_position" app:argType="integer" />
+        <argument android:name="offer_uuid" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="selected_category" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="offer_source" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="offerModel" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.rewards.model.OfferModel" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/offer_details_title" android:name="com.caseys.commerce.ui.rewards.fragment.OfferDetailsFragment" android:id="@id/nav_offer_details">
+        <argument android:name="dataMode" app:argType="com.caseys.commerce.ui.rewards.fragment.OfferDetailsFragment$DataMode" app:nullable="false" />
+        <argument android:name="fromExternalDeepLink" app:argType="boolean" app:nullable="false" />
+        <argument android:name="offer_source" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="isFromHomeScreen" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.activity.ReferFriendActivity" android:id="@id/nav_refer_friend_invite" />
+    <fragment android:label="@string/offer_code" android:name="com.caseys.commerce.ui.rewards.fragment.UnlockOfferFragment" android:id="@id/nav_unlock_offers_fragment" />
+</navigation>

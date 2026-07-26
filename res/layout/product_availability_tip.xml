@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Profile.Light" android:orientation="vertical" android:id="@id/product_availability_tip_layout" android:background="@drawable/future_order_card_address_border" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="fill_parent" android:layout_height="@dimen/tooltip_height" android:paddingStart="@dimen/margin_20" android:paddingEnd="@dimen/margin_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_availability_timings" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/productAvailabilityRecyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/nav_location" android:title="@string/navigation_label_locations" app:actionLayout="@layout/location_icon_badge" app:itemTextAppearance="@style/TextAppearance.Hometown.FontAwesomeLight.20" app:showAsAction="always" />
+    <item android:id="@id/nav_cart" android:title="@string/cart" app:actionLayout="@layout/cart_icon_badge" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/white" android:gravity="center" android:id="@id/toast_message" android:tag="layout/top_toast_0" android:background="@color/dirty_purple" android:paddingTop="@dimen/margin_standard_half" android:paddingBottom="@dimen/margin_standard_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/margin_standard" android:paddingEnd="@dimen/margin_standard"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

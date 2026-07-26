@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/store_occasion" app:startDestination="@id/nav_store_occasion_tabs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.order.occasion.occasionselection.fragment.StoreOccasionTabsFragment" android:id="@id/nav_store_occasion_tabs">
+        <argument android:name="occasionTitle" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.order.occasion.pickup.fragment.CarryoutStoreDetailsFragment" android:id="@id/nav_store_details_carryout">
+        <argument android:name="pageType" app:argType="integer" />
+        <argument android:name="selectedOccasion" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.order.occasion.delivery.fragment.DeliveryStoreDetailsFragment" android:id="@id/nav_store_details_delivery" />
+    <fragment android:name="com.caseys.commerce.ui.order.occasion.delivery.fragment.DeliveryStoreSearchFragment" android:id="@id/nav_delivery_order">
+        <argument android:name="pageType" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="address" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.checkout.model.DeliveryDestination" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.util.RationaleDialogFragment" android:id="@id/nav_permission_rationale_dialog">
+        <argument android:name="requestCode" app:argType="integer" />
+        <argument android:name="manifestPermission" app:argType="string" />
+        <argument android:name="rationale" app:argType="string" />
+    </fragment>
+</navigation>

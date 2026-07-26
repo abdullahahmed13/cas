@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:tint="@color/dirty_purple" android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/margin_standard_third" android:topRightRadius="@dimen/margin_standard_third" android:bottomLeftRadius="@dimen/margin_standard_third" android:bottomRightRadius="@dimen/margin_standard_third" />
+            <size android:height="@dimen/personal_challenges_item_complete_status_bg_height" android:width="@dimen/personal_challenges_item_complete_status_bg_width" />
+            <solid android:color="@color/dirty_purple" />
+        </shape>
+    </item>
+</layer-list>

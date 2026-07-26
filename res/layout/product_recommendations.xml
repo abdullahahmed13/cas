@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/productRecommendLayout" android:tag="layout/product_recommendations_0" android:paddingTop="@dimen/margin_standard_twothirds" android:paddingBottom="@dimen/margin_standard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black17" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/recommendations_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_recommendations_add_anything_to_order" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recommendedProductsRecyclerView" android:paddingTop="@dimen/margin_standard_half" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_standard_third" android:paddingEnd="@dimen/margin_standard_third" />
+</LinearLayout>

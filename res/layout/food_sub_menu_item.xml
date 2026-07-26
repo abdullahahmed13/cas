@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/food_sub_menu_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/topDividerLine" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_3" android:scaleType="fitXY" android:contentDescription="@null" app:srcCompat="@null" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/subMenuImage" android:layout_width="@dimen/dimen_64" android:layout_height="@dimen/dimen_64" android:layout_marginTop="@dimen/dimen_4" android:layout_marginBottom="@dimen/dimen_4" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_4" />
+        <TextView android:textAppearance="?textAppearanceMenuName" android:gravity="start|center" android:id="@id/subMenuTitle" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:drawablePadding="@dimen/margin_icon" android:paddingStart="@dimen/dimen_4" android:paddingEnd="@dimen/margin_icon" app:drawableEndCompat="@null" />
+    </LinearLayout>
+    <ImageView android:id="@id/dividerLine" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_3" android:scaleType="fitXY" android:contentDescription="@null" app:srcCompat="@null" />
+</LinearLayout>

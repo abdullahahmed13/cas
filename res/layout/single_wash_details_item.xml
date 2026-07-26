@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/single_wash_details_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/margin_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold24" android:textColor="@color/dirty_purple" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_washes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold18" android:textColor="@color/dirty_purple" android:gravity="start" android:layout_gravity="center" android:id="@id/tv_expiring_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.35" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:textColor="@color/purple_grey" android:gravity="start" android:layout_gravity="center" android:id="@id/tv_expiring_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.27" />
+    </LinearLayout>
+    <View android:background="@drawable/chalkline_horizontal_thickleft_long_pinkish_grey_two" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_3" android:layout_marginStart="@dimen/margin_20" android:layout_marginEnd="@dimen/margin_20" />
+</FrameLayout>

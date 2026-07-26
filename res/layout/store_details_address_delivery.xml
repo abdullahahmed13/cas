@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/store_details_address_delivery_0" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14.Caps" android:ellipsize="end" android:id="@id/store_address_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14.Caps" android:ellipsize="end" android:id="@id/store_address_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Medium14.Caps" android:ellipsize="end" android:id="@id/store_address_line3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+</LinearLayout>

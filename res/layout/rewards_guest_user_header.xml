@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Profile.Light" android:tag="layout/rewards_guest_user_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rewards_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@null" android:scaleType="centerCrop" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:id="@id/rewards_item_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rewards_guest_top_margin" android:layout_marginBottom="@dimen/margin_standard_twothirds" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        <com.caseys.commerce.customview.CtaButton android:id="@id/joinNowBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_quarter" android:text="@string/join_now" android:paddingStart="@dimen/margin_double_standard" android:paddingEnd="@dimen/margin_double_standard" android:elevation="@dimen/margin_double_standard" style="@style/Widget.Hometown.CtaButton.Small" />
+        <Button android:id="@id/signInBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" android:layout_marginBottom="@dimen/margin_standard" android:text="@string/sign_in" style="@style/Widget.Profile.Change.Button.NoBorder" />
+    </LinearLayout>
+</FrameLayout>

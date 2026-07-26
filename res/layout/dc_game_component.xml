@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@id/ivGameComponent" android:tag="layout/dc_game_component_0" android:layout_width="fill_parent" android:layout_height="@dimen/sweepstakes_fountain_club_height" android:layout_marginLeft="@dimen/margin_standard_twothirds" android:layout_marginTop="@dimen/margin_standard_twothirds" android:layout_marginRight="@dimen/margin_standard_twothirds" android:layout_marginBottom="@dimen/margin_standard_third" android:scaleType="centerCrop"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

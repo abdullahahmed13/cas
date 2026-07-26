@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/white_clickable_bg" android:insetTop="@dimen/margin_standard"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

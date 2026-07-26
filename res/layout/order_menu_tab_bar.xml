@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.caseys.commerce.customview.ScrollRequestBlocker android:paddingTop="@dimen/margin_standard_half" android:paddingBottom="@dimen/margin_standard_half" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:theme="@style/ThemeOverlay.Hometown.TabBar.Chalk.Scrolling" android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard_half" android:paddingEnd="@dimen/margin_standard_half">
+            <include android:id="@id/chalk_tab_bar" layout="@layout/chalk_tab_bar" />
+        </FrameLayout>
+    </HorizontalScrollView>
+</com.caseys.commerce.customview.ScrollRequestBlocker>

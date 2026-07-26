@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/my_profile_signout_0" android:background="@color/profile_bg" android:paddingBottom="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold16.RedHighlight" android:layout_gravity="center_horizontal" android:id="@id/sign_out_btn" android:background="@drawable/bg_invite_friends" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_33" android:text="@string/sign_out" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Profile.Button.SignOut" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:tint="@color/rewards_offer_divider" android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" android:bottomLeftRadius="8.0dip" android:bottomRightRadius="8.0dip" />
+            <size android:height="@dimen/personal_challenge_bg_height" android:width="@dimen/personal_challenge_bg_width" />
+            <solid android:color="@color/rewards_offer_divider" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/citrus_ad_banner_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/citrus_banner_image" android:layout_width="@dimen/dimen_320" android:layout_height="@dimen/dimen_100" android:layout_margin="@dimen/dimen_8" android:src="@drawable/citrus_ad" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+</FrameLayout>

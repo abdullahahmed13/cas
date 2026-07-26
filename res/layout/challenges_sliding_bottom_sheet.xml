@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/content_root" android:tag="layout/challenges_sliding_bottom_sheet_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.caseys.commerce.customview.SlidingBottomSheetBackgroundContentContainer android:id="@id/backgroundContentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.caseys.commerce.customview.UntouchablePaddingFrameLayout android:id="@id/bottom_sheet" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/contentFullWidth" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/personal_challenges_bottom_sheet_height" app:behavior_hideable="false" app:layout_behavior="@string/untouchable_padding_locking_bottomsheet_behavior">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/personalchallengesLayout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+            <FrameLayout android:id="@id/bottom_sheet_handle" android:background="@drawable/challenge_bottom_sheet_top" android:paddingTop="@dimen/challenges_bottom_sheet_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:elevation="@dimen/bottomsheet_elevation" />
+            <FrameLayout android:id="@id/bottomSheetContentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:elevation="@dimen/bottomsheet_elevation" />
+        </LinearLayout>
+    </com.caseys.commerce.customview.UntouchablePaddingFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

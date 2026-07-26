@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <inset android:drawable="@drawable/divider_address_thin" android:insetLeft="@dimen/margin_standard_twothirds" android:insetRight="@dimen/margin_standard_twothirds" />
+    </item>
+</layer-list>

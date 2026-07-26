@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="available_points_plurals">
+        <item quantity="other">Current points</item>
+        <item quantity="one">Current point</item>
+    </plurals>
+    <plurals name="inbox_message_days">
+        <item quantity="other">%1$d days ago</item>
+        <item quantity="one">%1$d day ago</item>
+    </plurals>
+    <plurals name="inbox_message_hours">
+        <item quantity="other">%1$d hours ago</item>
+        <item quantity="one">%1$d hour ago</item>
+    </plurals>
+    <plurals name="inbox_message_minutes">
+        <item quantity="other">%1$d minutes ago</item>
+        <item quantity="one">%1$d minute ago</item>
+    </plurals>
+    <plurals name="items_in_order">
+        <item quantity="other">%1$d Items</item>
+        <item quantity="one">%1$d Item</item>
+    </plurals>
+    <plurals name="modifier_out_of_stock_error_message">
+        <item quantity="other">"Sorry, the following items are currently unavailable at this store.
+
+%1$s 
+
+We've removed them from your order."</item>
+        <item quantity="one">"Sorry, %1$s is currently unavailable at this store. We've removed it from your order."</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="offer_expires_in">
+        <item quantity="other">Expires in %1$d days</item>
+        <item quantity="one">Expires in %1$d day</item>
+    </plurals>
+    <plurals name="points_earned">
+        <item quantity="other">%1$d points earned</item>
+        <item quantity="one">%1$d point earned</item>
+    </plurals>
+    <plurals name="points_plurals">
+        <item quantity="other">Points</item>
+        <item quantity="one">Point</item>
+    </plurals>
+    <plurals name="recent_orders">
+        <item quantity="other">Recent Orders</item>
+        <item quantity="one">Recent Order</item>
+    </plurals>
+    <plurals name="recent_transactions">
+        <item quantity="other">Recent Transactions</item>
+        <item quantity="one">Recent Transaction</item>
+    </plurals>
+    <plurals name="single_wash_deetails_expiring_days">
+        <item quantity="other">%1$d days</item>
+        <item quantity="one">%1$d day</item>
+    </plurals>
+</resources>

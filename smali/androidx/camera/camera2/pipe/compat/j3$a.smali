@@ -1,0 +1,61 @@
+.class public interface abstract Landroidx/camera/camera2/pipe/compat/j3$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Landroidx/camera/camera2/pipe/compat/k5;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/camera/camera2/pipe/compat/j3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract b(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract f(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract i(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract j(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract k(Landroidx/camera/camera2/pipe/compat/j3;)V
+    .param p1    # Landroidx/camera/camera2/pipe/compat/j3;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+.end method

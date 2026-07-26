@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rewards_card_border" />
+    <item android:drawable="@drawable/ripple_rectangle" />
+</layer-list>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_debug_settings_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_standard" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/buildMetadata" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:measureWithLargestChild="true">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Environment" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/debug_environment_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:layout_weight="1.0" android:layout_marginStart="@dimen/margin_standard" />
+        </LinearLayout>
+        <androidx.appcompat.widget.SwitchCompat android:textAppearance="?android:textAppearanceSmall" android:id="@id/debug_local_mocks_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="Use local JSON (where applicable)" />
+        <androidx.appcompat.widget.SwitchCompat android:textAppearance="?android:textAppearanceSmall" android:id="@id/settings_location_toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="Use hard-coded GPS location" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:weightSum="3.0" android:measureWithLargestChild="true">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Local Cart JSON File" android:layout_weight="1.0" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/cart_error_test_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:layout_weight="2.0" android:layout_marginStart="@dimen/margin_standard" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:weightSum="3.0" android:measureWithLargestChild="true">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Local Rewards JSON File" android:layout_weight="1.0" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/rewards_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:layout_weight="2.0" android:layout_marginStart="@dimen/margin_standard" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:weightSum="3.0" android:measureWithLargestChild="true">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Local Re-Order JSON File" android:layout_weight="1.0" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/reorder_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:layout_weight="2.0" android:layout_marginStart="@dimen/margin_standard" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:weightSum="3.0" android:measureWithLargestChild="true">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Local Home JSON File" android:layout_weight="1.0" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/home_spinner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/tappable_standard_size" android:layout_weight="2.0" android:layout_marginStart="@dimen/margin_standard" />
+        </LinearLayout>
+        <Button android:id="@id/debug_clear_order_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="Clear Order" />
+        <Button android:id="@id/btn_copy_firebase_token" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/copy_firebase_token_in_clipboard" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="Start Mock Order:" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+            <Button android:id="@id/mock_carryout_order_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Carryout" android:layout_weight="1.0" />
+            <Space android:layout_width="@dimen/margin_standard_half" android:layout_height="1.0dip" />
+            <Button android:id="@id/mock_delivery_order_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Delivery" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:id="@id/debug_sfmc_inbox_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="SFMC Inbox" />
+        <Button android:id="@id/debug_error_dialog_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="Example Error Dialog" />
+        <Button android:id="@id/debug_intentional_crash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="Intentional Crash" />
+    </LinearLayout>
+</ScrollView>

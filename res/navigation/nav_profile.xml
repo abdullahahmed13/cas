@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_profile" app:startDestination="@id/nav_profile_controller"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.account.fragment.MyProfileControllerFragment" android:id="@id/nav_profile_controller">
+        <argument android:name="launch_code" app:argType="string" />
+        <argument android:name="fromSignup" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/personal_information" android:name="com.caseys.commerce.ui.account.fragment.MyPersonalInfoFragment" android:id="@id/nav_my_personal_info">
+        <action android:id="@id/action_personal_info_to_nav_main" app:destination="@id/nav_main" app:popUpTo="@id/nav_main" app:popUpToInclusive="true" />
+        <argument android:name="fromDeleteAccount" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="deleteDialogTitle" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="deleteDialogDesc" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="deleteDialogCtaText" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/transactions" android:name="com.caseys.commerce.ui.account.fragment.TransactionsFragment" android:id="@id/nav_transactions" />
+    <activity android:label="@string/navigation_label_account" android:name="com.caseys.commerce.ui.order.cart.CartActivity" android:id="@id/nav_cart" />
+    <fragment android:label="@string/payment_methods_title" android:name="com.caseys.commerce.ui.account.fragment.PaymentMethodsFragment" android:id="@id/nav_my_payment_methods" />
+    <fragment android:label="@string/navigation_label_add_a_card" android:name="com.caseys.commerce.ui.account.fragment.AddCreditCardFragment" android:id="@id/nav_my_add_credit_card" />
+    <fragment android:label="@string/navigation_label_change_default_card" android:name="com.caseys.commerce.ui.account.fragment.DefaultCardSelectionFragment" android:id="@id/nav_change_default_card" />
+    <fragment android:label="@string/notifications" android:name="com.caseys.commerce.ui.account.fragment.AccountNotificationsFragment" android:id="@id/nav_marketing_communication" />
+    <fragment android:label="@string/navigation_label_favorite_store" android:name="com.caseys.commerce.ui.account.fragment.FavoriteStoreFragment" android:id="@id/nav_favorite_store" />
+    <fragment android:label="@string/navigation_label_age_restricted_offers" android:name="com.caseys.commerce.ui.rewards.fragment.RewardsPreferencesFragment" android:id="@id/nav_age_restricted_offers">
+        <argument android:name="fromSignup" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/rewards_find_school_title" android:name="com.caseys.commerce.ui.rewards.fragment.FindSchoolFragment" android:id="@id/nav_find_school">
+        <argument android:name="charityId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/school_selection" android:name="com.caseys.commerce.ui.rewards.fragment.SchoolSelectionFragment" android:id="@id/nav_school_details">
+        <argument android:name="charityId" app:argType="string" app:nullable="false" />
+        <argument android:name="oldCharityId" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/rewards_redeem_points_fragment_title" android:name="com.caseys.commerce.ui.rewards.fragment.RewardsRedeemPointsFragment" android:id="@id/nav_rewards_redeem_points">
+        <argument android:name="selectedIndex" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="isFromNavProfile" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.sfinbox.fragment.SFInboxFragment" android:id="@id/nav_sf_inbox_messages">
+        <action android:id="@id/action_inbox_to_detailFragment" app:destination="@id/nav_sf_inbox_details" app:popUpTo="@id/nav_sf_inbox_messages" app:popUpToInclusive="true" />
+        <argument android:name="url" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="fromDeepLink" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+        <argument android:name="fromAccountsTab" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_about_policies" android:name="com.caseys.commerce.ui.account.fragment.AboutPoliciesFragment" android:id="@id/nav_about" />
+    <fragment android:label="@string/navigation_label_software_license" android:name="com.caseys.commerce.ui.account.fragment.SoftwareLicenseFragment" android:id="@id/nav_software_license" />
+    <fragment android:label="@string/navigation_label_licenses" android:name="com.caseys.commerce.ui.account.fragment.LicenseFragment" android:id="@id/nav_licenses">
+        <argument android:name="title" app:argType="string" app:nullable="false" />
+        <argument android:name="file_name" app:argType="string" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.DatePickerFragment" android:id="@id/nav_datepicker_dialog">
+        <argument android:name="timeInMills" app:argType="long" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.LocationStoreDetailsFragment" android:id="@id/nav_store_details">
+        <argument android:name="pageType" app:argType="integer" />
+        <argument android:name="storeIdentifier" app:argType="com.caseys.commerce.ui.order.occasion.stores.model.StoreIdentifier" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.LocationsFragment" android:id="@id/nav_locations">
+        <argument android:name="pageType" app:argType="integer" />
+    </fragment>
+    <activity android:label="@string/navigation_label_home" android:name="com.caseys.commerce.activity.MainActivity" android:id="@id/nav_main">
+        <argument android:name="fromDeleteAccount" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+        <argument android:name="deleteDialogTitle" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="deleteDialogDesc" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="deleteDialogCtaText" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </activity>
+    <fragment android:label="@string/verify_mobile_number_title" android:name="com.caseys.commerce.ui.account.fragment.AccountDeletionOtpFragment" android:id="@id/nav_account_deletion_otp">
+        <argument android:name="phone_number" app:argType="string" />
+        <argument android:name="fromDeleteAccount" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+        <argument android:name="deleteSuccessComponent" android:defaultValue="@null" app:argType="com.caseys.commerce.ui.account.model.DeleteCustomerSuccessComponentModel" app:nullable="true" />
+    </fragment>
+    <fragment android:label="@string/navigation_label_home" android:name="com.caseys.commerce.ui.home.fragment.HomeFragment" android:id="@id/nav_tab_home" />
+    <fragment android:label="@string/navigation_label_team_members" android:name="com.caseys.commerce.ui.account.fragment.TeamMembersFragment" android:id="@id/nav_team_members" />
+    <fragment android:label="@string/navigation_label_dob_update" android:name="com.caseys.commerce.ui.account.fragment.DobUpdateFragment" android:id="@id/nav_dob_update">
+        <argument android:name="isFromDobUpdate" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+</navigation>

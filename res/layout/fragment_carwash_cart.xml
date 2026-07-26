@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_carwash_cart_0" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_cart" android:layout_width="@dimen/dimen_0" android:layout_height="@dimen/dimen_0" app:layout_constraintBottom_toTopOf="@id/btn_checkout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:id="@id/btn_checkout" android:background="@color/red500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/checkout" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="?buttonStyleCta" />
+    <include layout="@layout/full_screen_loading_state_root" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/amenity_linearLayout" android:tag="layout/store_amenity_cell_0" android:paddingTop="@dimen/margin_standard" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_columnWeight="1.0" app:layout_gravity="fill" app:layout_rowWeight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center" android:id="@id/amenities_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerInside" android:contentDescription="@null" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:textColor="@color/dirty_purple" android:ellipsize="end" android:gravity="start|center" android:id="@id/amenities_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_marginStart="@dimen/margin_standard_half" android:layout_marginEnd="@dimen/margin_standard_quarter" />
+</LinearLayout>

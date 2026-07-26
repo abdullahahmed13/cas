@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/transactions_loyalty_item_0" android:background="@drawable/transactions_item_border" android:paddingTop="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard_twothirds" android:paddingEnd="@dimen/margin_standard_twothirds" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:id="@id/loyalty_purchase_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/loyalty_purchase_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_sixth" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/loyalty_purchase_points_earned" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/loyalty_purchase_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/bottom_loyalty_purchase_divider" android:background="@drawable/divider_address_thin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_standard_twothirds" />
+    <View android:id="@id/last_item_loyalty_purchase_divider" android:background="@drawable/divider_address_thin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/margin_standard_twothirds" />
+</LinearLayout>

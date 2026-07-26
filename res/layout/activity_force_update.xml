@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/activity_force_update_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@drawable/force_update_popup_background" android:paddingLeft="@dimen/margin_standard_fourthirds" android:paddingTop="@dimen/margin_standard" android:paddingRight="@dimen/margin_standard_fourthirds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dialog_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:textStyle="bold" android:gravity="center" android:id="@id/force_update_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:text="@string/app_update_description" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:layout_marginEnd="@dimen/margin_standard_sixth">
+            <Button android:textStyle="bold" android:id="@id/btn_not_right_now" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_right_now" android:layout_weight="1.0" android:textAllCaps="false" style="@style/Widget.Hometown.Button.Borderless" />
+            <Button android:textStyle="bold" android:id="@id/btn_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update" android:layout_weight="1.0" android:textAllCaps="false" style="@style/Widget.Hometown.Button.Borderless" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

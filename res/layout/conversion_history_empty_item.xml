@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top_layout" android:tag="layout/conversion_history_empty_item_0" android:paddingTop="@dimen/margin_standard_half" android:paddingBottom="@dimen/margin_standard_half" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard" android:paddingEnd="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Bold14" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:includeFontPadding="false" />
+    <com.caseys.commerce.customview.CtaButton android:layout_gravity="center_horizontal" android:id="@id/redeem_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_fourthirds" android:text="@string/rewards_redeem_points_button" android:paddingStart="@dimen/margin_double_standard" android:paddingEnd="@dimen/margin_double_standard" style="?buttonStyleCtaSmall" />
+</LinearLayout>

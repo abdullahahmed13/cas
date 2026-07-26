@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/pdp_sauce_wings_modifier_disclaimer_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:gravity="center" android:id="@id/tvSauceWingsFlavourDisclaimer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_change_email_0" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/change_email_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/change_email_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_standard_twothirds" android:paddingEnd="@dimen/margin_standard_twothirds">
+            <LinearLayout android:orientation="vertical" android:id="@id/email_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:paddingStart="@dimen/margin_standard_half" android:paddingEnd="@dimen/margin_standard_half">
+                <TextView android:textAppearance="@style/TextAppearance.Profile.Regular14.PurpleGrey" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email" />
+                <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular16" android:id="@id/email_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_quarter" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/email_form_fields" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_half" />
+            <com.caseys.commerce.customview.CustomizableTextInputLayout android:id="@id/input_confirm_new_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_twothirds" android:hint="@string/info_confirm_new_email">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/confirm_new_email_text_input_edit_text" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_50" android:inputType="textEmailAddress" android:imeOptions="actionDone" />
+            </com.caseys.commerce.customview.CustomizableTextInputLayout>
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/i_want_to_receive_special_offers_from_caseys" />
+            <CheckBox android:id="@id/email_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:checked="true" android:text="@string/email" style="@style/Widget.Profile.CheckBox" />
+            <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Regular12" android:gravity="start" android:id="@id/change_email_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard" android:text="@string/change_email_description" />
+            <Button android:id="@id/change_email_save_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_standard_third" android:text="@string/save_and_signout_txt" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="@dimen/tappable_min_size" android:layout_height="@dimen/tappable_min_size" android:indeterminate="true" android:indeterminateOnly="true" style="@style/Widget.AppCompat.ProgressBar" />
+</FrameLayout>

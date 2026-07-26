@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/item_layout_common_offer_0" android:background="@drawable/bg_common_offer_item" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_44" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.FontAwesomeLight.Font20.Red" android:gravity="center" android:id="@id/tvFaOfferIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:text="@string/fa_your_offers" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black15.RedHighlight" android:layout_gravity="center" android:id="@id/tvOfferTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_offers" android:layout_marginStart="@dimen/dimen_8" />
+</LinearLayout>

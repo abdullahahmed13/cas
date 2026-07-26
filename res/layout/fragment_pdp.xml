@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/pdpLayout" android:tag="layout/fragment_pdp_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/occasion_selector_header_pdp" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/recyclerView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <fragment android:name="com.caseys.commerce.ui.order.occasion.occasionselection.fragment.OccasionSelectorFragment" android:id="@id/occasion_selector_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/pdpFooter" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/occasion_selector_header_pdp" />
+    <View android:id="@id/footerShadow" android:background="@drawable/gradient_shadow_top" android:layout_width="fill_parent" android:layout_height="@dimen/margin_standard" app:layout_constraintBottom_toTopOf="@id/pdpFooter" />
+    <include android:id="@id/pdpFooter" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/pdp_footer" />
+    <include layout="@layout/full_screen_loading_state_root" />
+</androidx.constraintlayout.widget.ConstraintLayout>

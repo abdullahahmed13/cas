@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_store_occasion_tabs_0" android:paddingTop="@dimen/margin_standard_third" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/occasionTabBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_standard_twothirds" android:layout_marginEnd="@dimen/margin_standard_twothirds" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/chalk_tab_bar" />
+    <FrameLayout android:id="@id/occasionFragmentContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/occasionTabBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_guest_arrival" app:startDestination="@id/nav_guest_car_maker_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.home.guestarrival.fragment.GuestCarMakerFragment" android:id="@id/nav_guest_car_maker_fragment" />
+    <fragment android:name="com.caseys.commerce.ui.home.guestarrival.fragment.GuestThankYouFragment" android:id="@id/nav_guest_thank_you_fragment" />
+</navigation>

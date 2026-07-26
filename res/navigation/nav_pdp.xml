@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_pdp" app:startDestination="@id/nav_pdp_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/navigation_label_order" android:name="com.caseys.commerce.ui.order.pdp.fragment.PdpFragment" android:id="@id/nav_pdp_fragment">
+        <argument android:name="customizationState" app:argType="com.caseys.commerce.ui.order.pdp.model.ProductCustomizationState" />
+        <argument android:name="selectedTabId" app:argType="integer" />
+        <argument android:name="analyticsData" app:argType="android.os.Bundle" app:nullable="true" />
+    </fragment>
+    <activity android:name="com.caseys.commerce.ui.order.occasion.occasionselection.SelectStoreOccasionActivity" android:id="@id/nav_select_store_occasion" />
+    <activity android:name="com.caseys.commerce.ui.order.occasion.editoccasionselection.EditSelectedOccasionActivity" android:id="@id/nav_edit_selected_occasion" />
+</navigation>

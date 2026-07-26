@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/line_divider_home_screen" android:left="@dimen/margin_standard_twothirds" android:top="@dimen/margin_standard_half" android:right="@dimen/margin_standard_twothirds" android:bottom="@dimen/margin_standard_half" />
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingStart="@dimen/margin_standard_half" android:paddingEnd="@dimen/margin_standard" android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill" android:drawable="@drawable/selectable_item_background_rounded" />
+    <item android:gravity="end|center" android:drawable="@drawable/ic_spinner_arrow_chalk" android:right="4.0dip" />
+    <item android:gravity="fill" android:drawable="@drawable/chalk_widget_outline_rounded" />
+</layer-list>

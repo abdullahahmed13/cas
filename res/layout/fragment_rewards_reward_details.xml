@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_rewards_reward_details_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_layout" android:background="@color/half_white" android:padding="@dimen/margin_standard_twothirds" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black18" android:id="@id/title_total" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/margin_standard_twothirds" />
+        <TextView android:textAppearance="@style/TextAppearance.Hometown.Chalk.Black24" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/divider" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/my_profile_list_divider_horizontal_chalk" android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/data_recyclerciew" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider" />
+    <include layout="@layout/full_screen_loading_state_root" />
+</androidx.constraintlayout.widget.ConstraintLayout>

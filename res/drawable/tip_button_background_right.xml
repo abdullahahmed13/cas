@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topRightRadius="@dimen/checkout_payment_button_border_radius" android:bottomRightRadius="@dimen/checkout_payment_button_border_radius" />
+    <solid android:width="@dimen/checkout_payment_button_border_width" android:color="@color/selector_tip_button_background" />
+</shape>

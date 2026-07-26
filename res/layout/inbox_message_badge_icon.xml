@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutInboxMessageBadge" android:focusable="true" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?actionButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_inbox_icon_message" android:contentDescription="@null" />
+    <TextView android:textAppearance="@style/TextAppearance.Hometown.Button.CartBadge" android:gravity="center" android:layout_gravity="end|top" android:id="@id/inbox_icon_badge" android:padding="1.0dip" android:layout_width="@dimen/margin_20" android:layout_height="@dimen/margin_20" android:layout_marginTop="@dimen/margin_standard_one_eighth" />
+</FrameLayout>

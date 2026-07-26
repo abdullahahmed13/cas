@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/dirty_purple" android:gravity="center" android:id="@id/tvCarWashPlpDisclaimer" android:tag="layout/carwash_plp_disclaimer_section_0" android:padding="@dimen/dimen_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_10" style="@style/TextAppearance.Hometown.Chalk.Regular16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

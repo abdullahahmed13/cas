@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_sf_inbox" app:startDestination="@id/nav_sf_inbox_messages"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.sfinbox.fragment.SFInboxFragment" android:id="@id/nav_sf_inbox_messages">
+        <argument android:name="url" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="fromDeepLink" android:defaultValue="true" app:argType="boolean" app:nullable="false" />
+        <action android:id="@id/action_inbox_to_detailFragment" app:destination="@id/nav_sf_inbox_details" app:popUpTo="@id/nav_sf_inbox_messages" app:popUpToInclusive="true" />
+        <argument android:name="fromAccountsTab" android:defaultValue="false" app:argType="boolean" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.sfinbox.fragment.SFInboxDetailsFragment" android:id="@id/nav_sf_inbox_details" />
+</navigation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_personal_challenge_details" app:startDestination="@id/nav_personal_challenge_details_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.rewards.fragment.PersonalChallengeDetailsFragment" android:id="@id/nav_personal_challenge_details_fragment">
+        <argument android:name="challengeDetailsState" app:argType="com.caseys.commerce.ui.rewards.model.PersonalChallengeDetailsModel" />
+    </fragment>
+</navigation>

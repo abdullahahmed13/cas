@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/nav_locations"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.dialog.GenericDialogFragment" android:id="@id/generic_dialog">
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="message" app:argType="string" app:nullable="false" />
+        <argument android:name="htmlMessage" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.dialog.AlertDialogFragment" android:id="@id/alert_dialog">
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="message" app:argType="string" app:nullable="false" />
+        <argument android:name="positiveLabel" app:argType="string" app:nullable="true" />
+        <argument android:name="negativeLabel" app:argType="string" app:nullable="true" />
+        <argument android:name="htmlMessage" app:argType="boolean" />
+        <argument android:name="cancellable" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.LocationsFragment" android:id="@id/nav_locations">
+        <argument android:name="pageType" app:argType="integer" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.fragment.LocationStoreDetailsFragment" android:id="@id/nav_store_details">
+        <argument android:name="pageType" app:argType="integer" />
+        <argument android:name="storeIdentifier" app:argType="com.caseys.commerce.ui.order.occasion.stores.model.StoreIdentifier" />
+    </fragment>
+</navigation>

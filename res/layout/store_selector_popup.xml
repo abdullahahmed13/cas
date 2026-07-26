@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/store_selector_popup_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Profile.Regular14.PurpleGrey" android:gravity="center" android:layout_gravity="center" android:id="@id/store_selector_popup_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_store_tooltip" />
+</FrameLayout>

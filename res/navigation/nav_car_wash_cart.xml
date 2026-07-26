@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_car_wash_cart" app:startDestination="@id/nav_car_wash_cart_page"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashCartFragment" android:id="@id/nav_car_wash_cart_page" />
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashCheckoutContainerFragment" android:id="@id/nav_car_wash_checkout_page">
+        <action android:id="@id/action_checkout_success" app:destination="@id/nav_car_wash_checkout_confirmation" app:popUpTo="@id/nav_car_wash_cart_page" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="com.caseys.commerce.ui.carwash.fragment.CarWashCheckoutConfirmationFragment" android:id="@id/nav_car_wash_checkout_confirmation" />
+    <fragment android:name="com.caseys.commerce.ui.checkout.fragment.CheckoutGiftCardHelpFragment" android:id="@id/nav_checkout_gift_card_help" />
+</navigation>

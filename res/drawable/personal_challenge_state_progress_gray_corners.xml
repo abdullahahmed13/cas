@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="10.0dip" android:topRightRadius="10.0dip" android:bottomLeftRadius="10.0dip" android:bottomRightRadius="10.0dip" />
+            <solid android:color="@color/rewards_offer_divider" />
+            <size android:height="@dimen/personal_challenge_state_progress_height" android:width="@dimen/personal_challenge_state_progress_width" />
+        </shape>
+    </item>
+</layer-list>
