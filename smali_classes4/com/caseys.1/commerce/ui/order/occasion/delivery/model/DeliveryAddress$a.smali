@@ -1,0 +1,156 @@
+.class public final Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/os/Parcel;)Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+    .locals 3
+
+    .line 1
+    const-string v0, "parcel"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+
+    .line 7
+    .line 8
+    sget-object v1, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddressDetails;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 9
+    .line 10
+    invoke-interface {v1, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    check-cast v1, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddressDetails;
+
+    .line 15
+    .line 16
+    const-class v2, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+
+    .line 17
+    .line 18
+    invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    invoke-virtual {p1, v2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    check-cast v2, Lcom/google/android/gms/maps/model/LatLng;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    invoke-direct {v0, v1, v2, p1}, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;-><init>(Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddressDetails;Lcom/google/android/gms/maps/model/LatLng;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-object v0
+.end method
+
+.method public final b(I)[Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+
+    .line 2
+    .line 3
+    return-object p1
+.end method
+
+.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress$a;->a(Landroid/os/Parcel;)Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress$a;->b(I)[Lcom/caseys/commerce/ui/order/occasion/delivery/model/DeliveryAddress;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method

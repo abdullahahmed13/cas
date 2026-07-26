@@ -1,0 +1,100 @@
+.class public final Lp6/n;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# instance fields
+.field private final a:Ljava/math/BigDecimal;
+    .annotation build Lqi/m;
+    .end annotation
+.end field
+
+.field private final b:Z
+
+.field private final c:Z
+
+
+# direct methods
+.method public constructor <init>(Ljava/math/BigDecimal;ZZ)V
+    .locals 0
+    .param p1    # Ljava/math/BigDecimal;
+        .annotation build Lqi/m;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lp6/n;->a:Ljava/math/BigDecimal;
+
+    .line 3
+    iput-boolean p2, p0, Lp6/n;->b:Z
+
+    .line 4
+    iput-boolean p3, p0, Lp6/n;->c:Z
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/math/BigDecimal;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 1
+
+    and-int/lit8 p5, p4, 0x2
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_0
+
+    move p2, v0
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_1
+
+    move p3, v0
+
+    .line 5
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lp6/n;-><init>(Ljava/math/BigDecimal;ZZ)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/math/BigDecimal;
+    .locals 1
+    .annotation build Lqi/m;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lp6/n;->a:Ljava/math/BigDecimal;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lp6/n;->b:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lp6/n;->c:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method

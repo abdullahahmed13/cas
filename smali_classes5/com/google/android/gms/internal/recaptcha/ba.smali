@@ -1,0 +1,202 @@
+.class final Lcom/google/android/gms/internal/recaptcha/ba;
+.super Lcom/google/android/gms/internal/recaptcha/t9;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/android/gms/internal/recaptcha/t9<",
+        "TE;>;"
+    }
+.end annotation
+
+
+# static fields
+.field static final h:Lcom/google/android/gms/internal/recaptcha/t9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/android/gms/internal/recaptcha/t9<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field final transient f:[Ljava/lang/Object;
+
+.field private final transient g:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/recaptcha/ba;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    new-array v2, v1, [Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, v2, v1}, Lcom/google/android/gms/internal/recaptcha/ba;-><init>([Ljava/lang/Object;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Lcom/google/android/gms/internal/recaptcha/ba;->h:Lcom/google/android/gms/internal/recaptcha/t9;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method constructor <init>([Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/internal/recaptcha/t9;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/gms/internal/recaptcha/ba;->f:[Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    iput p2, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method final c([Ljava/lang/Object;I)I
+    .locals 2
+
+    .line 1
+    iget-object p2, p0, Lcom/google/android/gms/internal/recaptcha/ba;->f:[Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    iget v1, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 5
+    .line 6
+    invoke-static {p2, v0, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget p1, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 10
+    .line 11
+    return p1
+.end method
+
+.method final d()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method final f()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final get(I)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TE;"
+        }
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 2
+    .line 3
+    const-string v1, "index"
+
+    .line 4
+    .line 5
+    invoke-static {p1, v0, v1}, Lcom/google/android/gms/internal/recaptcha/w8;->a(IILjava/lang/String;)I
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v0, p0, Lcom/google/android/gms/internal/recaptcha/ba;->f:[Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    aget-object p1, v0, p1
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    return-object p1
+.end method
+
+.method final o()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method final p()[Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/internal/recaptcha/ba;->f:[Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/google/android/gms/internal/recaptcha/ba;->g:I
+
+    .line 2
+    .line 3
+    return v0
+.end method

@@ -1,0 +1,27 @@
+.class public interface abstract Lcom/google/android/gms/internal/recaptcha/zh;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Ljava/util/List;
+
+
+# virtual methods
+.method public abstract Q1(Lcom/google/android/gms/internal/recaptcha/zf;)V
+.end method
+
+.method public abstract a0(I)Ljava/lang/Object;
+.end method
+
+.method public abstract n()Lcom/google/android/gms/internal/recaptcha/zh;
+.end method
+
+.method public abstract q()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "*>;"
+        }
+    .end annotation
+.end method

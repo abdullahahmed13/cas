@@ -1,0 +1,111 @@
+.class public final Landroidx/navigation/g$c$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/navigation/g$c;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private a:I
+
+.field private b:Landroidx/core/app/e;
+    .annotation build Lqi/m;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(I)Landroidx/navigation/g$c$a;
+    .locals 1
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget v0, p0, Landroidx/navigation/g$c$a;->a:I
+
+    .line 2
+    .line 3
+    or-int/2addr p1, v0
+
+    .line 4
+    iput p1, p0, Landroidx/navigation/g$c$a;->a:I
+
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public final b()Landroidx/navigation/g$c;
+    .locals 3
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroidx/navigation/g$c;
+
+    .line 2
+    .line 3
+    iget v1, p0, Landroidx/navigation/g$c$a;->a:I
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Landroidx/navigation/g$c$a;->b:Landroidx/core/app/e;
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2}, Landroidx/navigation/g$c;-><init>(ILandroidx/core/app/e;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public final c(Landroidx/core/app/e;)Landroidx/navigation/g$c$a;
+    .locals 1
+    .param p1    # Landroidx/core/app/e;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    const-string v0, "activityOptions"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object p1, p0, Landroidx/navigation/g$c$a;->b:Landroidx/core/app/e;
+
+    .line 7
+    .line 8
+    return-object p0
+.end method

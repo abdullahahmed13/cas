@@ -1,0 +1,1596 @@
+.class public final Lcom/caseys/commerce/ui/order/plp/viewmodel/g;
+.super Landroidx/lifecycle/h2;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# instance fields
+.field private d:Z
+
+.field private final e:Landroidx/lifecycle/d1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/d1<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private final f:Lcom/caseys/commerce/ui/order/menu/repository/n0;
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private g:Lcom/caseys/commerce/ui/order/plp/adapter/c$r;
+    .annotation build Lqi/m;
+    .end annotation
+.end field
+
+.field private final h:Landroidx/lifecycle/b1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/b1<",
+            "Lcom/caseys/commerce/data/w<",
+            "Ljava/util/List<",
+            "Lu6/f;",
+            ">;>;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private final i:Landroidx/lifecycle/d1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/d1<",
+            "Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private final j:Landroidx/lifecycle/x0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/x0<",
+            "Lcom/caseys/commerce/data/w<",
+            "Ljava/util/List<",
+            "Lu6/f;",
+            ">;>;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private final k:Landroidx/lifecycle/d1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/d1<",
+            "Lr7/b;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+.field private final l:Landroidx/lifecycle/x0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/x0<",
+            "Lcom/caseys/commerce/data/w<",
+            "Lr7/h;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 6
+
+    .line 1
+    invoke-direct {p0}, Landroidx/lifecycle/h2;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Landroidx/lifecycle/d1;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Landroidx/lifecycle/d1;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->e:Landroidx/lifecycle/d1;
+
+    .line 10
+    .line 11
+    sget-object v1, Lcom/caseys/commerce/ui/order/menu/repository/n0;->p:Lcom/caseys/commerce/ui/order/menu/repository/n0$a;
+
+    .line 12
+    .line 13
+    invoke-virtual {v1}, Lcom/caseys/commerce/ui/order/menu/repository/n0$a;->a()Lcom/caseys/commerce/ui/order/menu/repository/n0;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    iput-object v1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->f:Lcom/caseys/commerce/ui/order/menu/repository/n0;
+
+    .line 18
+    .line 19
+    new-instance v1, Landroidx/lifecycle/b1;
+
+    .line 20
+    .line 21
+    invoke-direct {v1}, Landroidx/lifecycle/b1;-><init>()V
+
+    .line 22
+    .line 23
+    .line 24
+    iput-object v1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->h:Landroidx/lifecycle/b1;
+
+    .line 25
+    .line 26
+    new-instance v2, Landroidx/lifecycle/d1;
+
+    .line 27
+    .line 28
+    invoke-direct {v2}, Landroidx/lifecycle/d1;-><init>()V
+
+    .line 29
+    .line 30
+    .line 31
+    iput-object v2, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->i:Landroidx/lifecycle/d1;
+
+    .line 32
+    .line 33
+    new-instance v3, Lcom/caseys/commerce/ui/order/plp/viewmodel/a;
+
+    .line 34
+    .line 35
+    invoke-direct {v3}, Lcom/caseys/commerce/ui/order/plp/viewmodel/a;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-static {v0, v3}, Landroidx/lifecycle/e2;->l(Landroidx/lifecycle/x0;Leg/l;)Landroidx/lifecycle/x0;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    iput-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 43
+    .line 44
+    new-instance v3, Landroidx/lifecycle/d1;
+
+    .line 45
+    .line 46
+    invoke-direct {v3}, Landroidx/lifecycle/d1;-><init>()V
+
+    .line 47
+    .line 48
+    .line 49
+    iput-object v3, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->k:Landroidx/lifecycle/d1;
+
+    .line 50
+    .line 51
+    new-instance v4, Lcom/caseys/commerce/ui/order/plp/viewmodel/b;
+
+    .line 52
+    .line 53
+    invoke-direct {v4, p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/b;-><init>(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;)V
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-static {v3, v4}, Lcom/caseys/commerce/extensions/g;->b(Landroidx/lifecycle/x0;Leg/l;)Landroidx/lifecycle/x0;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v3
+
+    .line 60
+    iput-object v3, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->l:Landroidx/lifecycle/x0;
+
+    .line 61
+    .line 62
+    new-instance v4, Lcom/caseys/commerce/ui/order/plp/viewmodel/c;
+
+    .line 63
+    .line 64
+    invoke-direct {v4, p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/c;-><init>(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;)V
+
+    .line 65
+    .line 66
+    .line 67
+    new-instance v5, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;
+
+    .line 68
+    .line 69
+    invoke-direct {v5, v4}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;-><init>(Leg/l;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {v1, v0, v5}, Landroidx/lifecycle/b1;->t(Landroidx/lifecycle/x0;Landroidx/lifecycle/e1;)V
+
+    .line 73
+    .line 74
+    .line 75
+    new-instance v0, Lcom/caseys/commerce/ui/order/plp/viewmodel/d;
+
+    .line 76
+    .line 77
+    invoke-direct {v0, p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/d;-><init>(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;)V
+
+    .line 78
+    .line 79
+    .line 80
+    new-instance v4, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;
+
+    .line 81
+    .line 82
+    invoke-direct {v4, v0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;-><init>(Leg/l;)V
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v1, v3, v4}, Landroidx/lifecycle/b1;->t(Landroidx/lifecycle/x0;Landroidx/lifecycle/e1;)V
+
+    .line 86
+    .line 87
+    .line 88
+    new-instance v0, Lcom/caseys/commerce/ui/order/plp/viewmodel/e;
+
+    .line 89
+    .line 90
+    invoke-direct {v0, p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/e;-><init>(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;)V
+
+    .line 91
+    .line 92
+    .line 93
+    new-instance v3, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;
+
+    .line 94
+    .line 95
+    invoke-direct {v3, v0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$b;-><init>(Leg/l;)V
+
+    .line 96
+    .line 97
+    .line 98
+    invoke-virtual {v1, v2, v3}, Landroidx/lifecycle/b1;->t(Landroidx/lifecycle/x0;Landroidx/lifecycle/e1;)V
+
+    .line 99
+    .line 100
+    .line 101
+    return-void
+.end method
+
+.method private final F(Ljava/util/List;Lcom/caseys/commerce/data/w;)Ljava/util/List;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lu6/f;",
+            ">;",
+            "Lcom/caseys/commerce/data/w<",
+            "Lr7/h;",
+            ">;)",
+            "Ljava/util/List<",
+            "Lu6/f;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lkotlin/collections/f0;->E1(Ljava/lang/Iterable;)Lkotlin/sequences/m;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-direct {p0, p1, p2}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->G(Lkotlin/sequences/m;Lcom/caseys/commerce/data/w;)Lkotlin/sequences/m;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Lkotlin/sequences/p;->I3(Lkotlin/sequences/m;)Ljava/util/List;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method private final G(Lkotlin/sequences/m;Lcom/caseys/commerce/data/w;)Lkotlin/sequences/m;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/sequences/m<",
+            "+",
+            "Lu6/f;",
+            ">;",
+            "Lcom/caseys/commerce/data/w<",
+            "Lr7/h;",
+            ">;)",
+            "Lkotlin/sequences/m<",
+            "Lu6/f;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/caseys/commerce/ui/order/plp/viewmodel/f;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p2}, Lcom/caseys/commerce/ui/order/plp/viewmodel/f;-><init>(Lcom/caseys/commerce/data/w;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1, v0}, Lkotlin/sequences/p;->S1(Lkotlin/sequences/m;Leg/l;)Lkotlin/sequences/m;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+.end method
+
+.method private static final H(Lcom/caseys/commerce/data/w;Lu6/f;)Lu6/f;
+    .locals 1
+
+    .line 1
+    const-string v0, "section"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    instance-of v0, p1, Lr7/i;
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_1
+
+    .line 9
+    .line 10
+    instance-of p1, p0, Lcom/caseys/commerce/data/j0;
+
+    .line 11
+    .line 12
+    if-eqz p1, :cond_0
+
+    .line 13
+    .line 14
+    new-instance p1, Lr7/i;
+
+    .line 15
+    .line 16
+    check-cast p0, Lcom/caseys/commerce/data/j0;
+
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lcom/caseys/commerce/data/w;->a()Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    check-cast p0, Lr7/h;
+
+    .line 23
+    .line 24
+    invoke-direct {p1, p0}, Lr7/i;-><init>(Lr7/h;)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-object p1
+
+    .line 28
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 29
+    return-object p0
+
+    .line 30
+    :cond_1
+    return-object p1
+.end method
+
+.method private final I()V
+    .locals 10
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->l:Landroidx/lifecycle/x0;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/caseys/commerce/data/w;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    check-cast v1, Lcom/caseys/commerce/data/w;
+
+    .line 16
+    .line 17
+    iget-object v2, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->i:Landroidx/lifecycle/d1;
+
+    .line 18
+    .line 19
+    invoke-virtual {v2}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v2
+
+    .line 23
+    check-cast v2, Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;
+
+    .line 24
+    .line 25
+    instance-of v3, v1, Lcom/caseys/commerce/data/j0;
+
+    .line 26
+    .line 27
+    if-eqz v3, :cond_0
+
+    .line 28
+    .line 29
+    check-cast v1, Lcom/caseys/commerce/data/j0;
+
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Lcom/caseys/commerce/data/j0;->c()Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v1
+
+    .line 35
+    check-cast v1, Ljava/util/List;
+
+    .line 36
+    .line 37
+    invoke-direct {p0, v1, v0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->F(Ljava/util/List;Lcom/caseys/commerce/data/w;)Ljava/util/List;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    sget-object v1, Lcom/caseys/commerce/logic/g;->a:Lcom/caseys/commerce/logic/g;
+
+    .line 42
+    .line 43
+    iget-boolean v3, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 44
+    .line 45
+    invoke-virtual {v1, v2, v0, v3}, Lcom/caseys/commerce/logic/g;->u0(Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;Ljava/util/List;Z)Ljava/util/List;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    new-instance v1, Lcom/caseys/commerce/data/j0;
+
+    .line 50
+    .line 51
+    invoke-direct {v1, v0}, Lcom/caseys/commerce/data/j0;-><init>(Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_0
+    instance-of v0, v1, Lcom/caseys/commerce/data/f;
+
+    .line 56
+    .line 57
+    if-eqz v0, :cond_1
+
+    .line 58
+    .line 59
+    new-instance v1, Lcom/caseys/commerce/data/f;
+
+    .line 60
+    .line 61
+    invoke-direct {v1}, Lcom/caseys/commerce/data/f;-><init>()V
+
+    .line 62
+    .line 63
+    .line 64
+    goto :goto_0
+
+    .line 65
+    :cond_1
+    instance-of v0, v1, Lcom/caseys/commerce/data/d;
+
+    .line 66
+    .line 67
+    if-eqz v0, :cond_3
+
+    .line 68
+    .line 69
+    check-cast v1, Lcom/caseys/commerce/data/d;
+
+    .line 70
+    .line 71
+    invoke-virtual {v1}, Lcom/caseys/commerce/data/d;->c()Lcom/caseys/commerce/data/LoadError;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v0
+
+    .line 75
+    instance-of v0, v0, Lcom/caseys/commerce/data/NetworkLoadError;
+
+    .line 76
+    .line 77
+    if-eqz v0, :cond_2
+
+    .line 78
+    .line 79
+    invoke-virtual {v1}, Lcom/caseys/commerce/data/d;->d()Lcom/caseys/commerce/data/d;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v1
+
+    .line 83
+    goto :goto_0
+
+    .line 84
+    :cond_2
+    new-instance v1, Lcom/caseys/commerce/data/j0;
+
+    .line 85
+    .line 86
+    invoke-static {}, Lkotlin/collections/f0;->J()Ljava/util/List;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v0
+
+    .line 90
+    invoke-direct {v1, v0}, Lcom/caseys/commerce/data/j0;-><init>(Ljava/lang/Object;)V
+
+    .line 91
+    .line 92
+    .line 93
+    goto :goto_0
+
+    .line 94
+    :cond_3
+    new-instance v1, Lcom/caseys/commerce/data/d;
+
+    .line 95
+    .line 96
+    new-instance v2, Lcom/caseys/commerce/data/LoadError;
+
+    .line 97
+    .line 98
+    const/16 v8, 0x1b
+
+    .line 99
+    .line 100
+    const/4 v9, 0x0
+
+    .line 101
+    const/4 v3, 0x0
+
+    .line 102
+    const/4 v4, 0x0
+
+    .line 103
+    const-string v5, "Unknown error"
+
+    .line 104
+    .line 105
+    const/4 v6, 0x0
+
+    .line 106
+    const/4 v7, 0x0
+
+    .line 107
+    invoke-direct/range {v2 .. v9}, Lcom/caseys/commerce/data/LoadError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-direct {v1, v2}, Lcom/caseys/commerce/data/d;-><init>(Lcom/caseys/commerce/data/LoadError;)V
+
+    .line 111
+    .line 112
+    .line 113
+    :goto_0
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->h:Landroidx/lifecycle/b1;
+
+    .line 114
+    .line 115
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/d1;->s(Ljava/lang/Object;)V
+
+    .line 116
+    .line 117
+    .line 118
+    return-void
+.end method
+
+.method private static final J(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lr7/b;)Landroidx/lifecycle/x0;
+    .locals 8
+
+    .line 1
+    invoke-virtual {p1}, Lr7/b;->e()Ljava/util/List;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Ljava/util/Collection;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    if-eqz v0, :cond_1
+
+    .line 14
+    .line 15
+    :cond_0
+    invoke-virtual {p1}, Lr7/b;->f()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v0
+
+    .line 23
+    if-nez v0, :cond_1
+
+    .line 24
+    .line 25
+    new-instance p0, Lcom/caseys/commerce/data/v;
+
+    .line 26
+    .line 27
+    new-instance p1, Lcom/caseys/commerce/data/d;
+
+    .line 28
+    .line 29
+    new-instance v0, Lcom/caseys/commerce/data/LoadError;
+
+    .line 30
+    .line 31
+    const/16 v6, 0x1e
+
+    .line 32
+    .line 33
+    const/4 v7, 0x0
+
+    .line 34
+    const-string v1, "No products are available"
+
+    .line 35
+    .line 36
+    const/4 v2, 0x0
+
+    .line 37
+    const/4 v3, 0x0
+
+    .line 38
+    const/4 v4, 0x0
+
+    .line 39
+    const/4 v5, 0x0
+
+    .line 40
+    invoke-direct/range {v0 .. v7}, Lcom/caseys/commerce/data/LoadError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-direct {p1, v0}, Lcom/caseys/commerce/data/d;-><init>(Lcom/caseys/commerce/data/LoadError;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-direct {p0, p1}, Lcom/caseys/commerce/data/v;-><init>(Ljava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    return-object p0
+
+    .line 50
+    :cond_1
+    invoke-virtual {p1}, Lr7/b;->e()Ljava/util/List;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    check-cast v0, Ljava/util/Collection;
+
+    .line 55
+    .line 56
+    if-eqz v0, :cond_3
+
+    .line 57
+    .line 58
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v0
+
+    .line 62
+    if-eqz v0, :cond_2
+
+    .line 63
+    .line 64
+    goto :goto_0
+
+    .line 65
+    :cond_2
+    invoke-virtual {p1}, Lr7/b;->f()Ljava/lang/String;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 70
+    .line 71
+    .line 72
+    move-result v0
+
+    .line 73
+    if-nez v0, :cond_3
+
+    .line 74
+    .line 75
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->f:Lcom/caseys/commerce/ui/order/menu/repository/n0;
+
+    .line 76
+    .line 77
+    new-instance v1, Lcom/caseys/commerce/data/c;
+
+    .line 78
+    .line 79
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 80
+    .line 81
+    invoke-direct {v1, v2}, Lcom/caseys/commerce/data/c;-><init>(Ljava/lang/Object;)V
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {v0, v1}, Lcom/caseys/commerce/ui/order/menu/repository/n0;->d1(Lcom/caseys/commerce/data/c;)V
+
+    .line 85
+    .line 86
+    .line 87
+    iget-object p0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->f:Lcom/caseys/commerce/ui/order/menu/repository/n0;
+
+    .line 88
+    .line 89
+    invoke-virtual {p1}, Lr7/b;->e()Ljava/util/List;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p1
+
+    .line 93
+    invoke-virtual {p0, p1}, Lcom/caseys/commerce/ui/order/menu/repository/n0;->l0(Ljava/util/List;)Landroidx/lifecycle/x0;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p0
+
+    .line 97
+    return-object p0
+
+    .line 98
+    :cond_3
+    :goto_0
+    iget-object p0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->f:Lcom/caseys/commerce/ui/order/menu/repository/n0;
+
+    .line 99
+    .line 100
+    invoke-virtual {p1}, Lr7/b;->f()Ljava/lang/String;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p1
+
+    .line 104
+    invoke-virtual {p0, p1}, Lcom/caseys/commerce/ui/order/menu/repository/n0;->B0(Ljava/lang/String;)Landroidx/lifecycle/x0;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object p0
+
+    .line 108
+    return-object p0
+.end method
+
+.method private static final K(Ljava/lang/String;)Landroidx/lifecycle/x0;
+    .locals 3
+
+    .line 1
+    if-eqz p0, :cond_1
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    sget-object v0, Lcom/caseys/commerce/repo/rewards/t0;->u:Lcom/caseys/commerce/repo/rewards/t0$a;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Lcom/caseys/commerce/repo/rewards/t0$a;->a()Lcom/caseys/commerce/repo/rewards/t0;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    invoke-virtual {v0, p0}, Lcom/caseys/commerce/repo/rewards/t0;->k0(Ljava/lang/String;)Landroidx/lifecycle/x0;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+
+    .line 21
+    :cond_1
+    :goto_0
+    new-instance p0, Lcom/caseys/commerce/data/v;
+
+    .line 22
+    .line 23
+    new-instance v0, Lcom/caseys/commerce/data/j0;
+
+    .line 24
+    .line 25
+    new-instance v1, Lr7/i;
+
+    .line 26
+    .line 27
+    const/4 v2, 0x0
+
+    .line 28
+    invoke-direct {v1, v2}, Lr7/i;-><init>(Lr7/h;)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-static {v1}, Lkotlin/collections/f0;->l(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v1
+
+    .line 35
+    invoke-direct {v0, v1}, Lcom/caseys/commerce/data/j0;-><init>(Ljava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-direct {p0, v0}, Lcom/caseys/commerce/data/v;-><init>(Ljava/lang/Object;)V
+
+    .line 39
+    .line 40
+    .line 41
+    return-object p0
+.end method
+
+.method public static synthetic e(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->r(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;)Lkotlin/x2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic f(Lcom/caseys/commerce/data/w;Lu6/f;)Lu6/f;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->H(Lcom/caseys/commerce/data/w;Lu6/f;)Lu6/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic g(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->o(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic h(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->n(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic i(Ljava/lang/String;)Landroidx/lifecycle/x0;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->K(Ljava/lang/String;)Landroidx/lifecycle/x0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic k(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lr7/b;)Landroidx/lifecycle/x0;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->J(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lr7/b;)Landroidx/lifecycle/x0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private static final n(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    iget-boolean p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_0
+
+    .line 4
+    .line 5
+    sget-object p1, Lcom/caseys/commerce/repo/rewards/t0;->u:Lcom/caseys/commerce/repo/rewards/t0$a;
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Lcom/caseys/commerce/repo/rewards/t0$a;->a()Lcom/caseys/commerce/repo/rewards/t0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1}, Lcom/caseys/commerce/repo/rewards/t0;->z0()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    if-eqz p1, :cond_0
+
+    .line 16
+    .line 17
+    iget-object p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    instance-of p1, p1, Lcom/caseys/commerce/data/f;
+
+    .line 24
+    .line 25
+    if-nez p1, :cond_0
+
+    .line 26
+    .line 27
+    invoke-direct {p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->u()V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_0
+    iget-object p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 31
+    .line 32
+    invoke-virtual {p1}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    instance-of p1, p1, Lcom/caseys/commerce/data/f;
+
+    .line 37
+    .line 38
+    if-nez p1, :cond_1
+
+    .line 39
+    .line 40
+    iget-object p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 41
+    .line 42
+    invoke-virtual {p1}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    instance-of p1, p1, Lcom/caseys/commerce/data/r;
+
+    .line 47
+    .line 48
+    if-nez p1, :cond_1
+
+    .line 49
+    .line 50
+    sget-object p1, Lcom/caseys/commerce/repo/rewards/t0;->u:Lcom/caseys/commerce/repo/rewards/t0$a;
+
+    .line 51
+    .line 52
+    invoke-virtual {p1}, Lcom/caseys/commerce/repo/rewards/t0$a;->a()Lcom/caseys/commerce/repo/rewards/t0;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {p1}, Lcom/caseys/commerce/repo/rewards/t0;->z0()Z
+
+    .line 57
+    .line 58
+    .line 59
+    move-result p1
+
+    .line 60
+    iput-boolean p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 61
+    .line 62
+    :cond_1
+    invoke-direct {p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->I()V
+
+    .line 63
+    .line 64
+    .line 65
+    sget-object p0, Lkotlin/x2;->a:Lkotlin/x2;
+
+    .line 66
+    .line 67
+    return-object p0
+.end method
+
+.method private static final o(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/data/w;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->I()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p0, Lkotlin/x2;->a:Lkotlin/x2;
+
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method private static final r(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lcom/caseys/commerce/ui/home/dynamic/model/CitrusAdBannerResponse;)Lkotlin/x2;
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->I()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p0, Lkotlin/x2;->a:Lkotlin/x2;
+
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public static final synthetic s(Lcom/caseys/commerce/ui/order/plp/viewmodel/g;)Landroidx/lifecycle/d1;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->i:Landroidx/lifecycle/d1;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method private final u()V
+    .locals 7
+
+    .line 1
+    sget-object v0, Lcom/caseys/commerce/repo/rewards/t0;->u:Lcom/caseys/commerce/repo/rewards/t0$a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/caseys/commerce/repo/rewards/t0$a;->a()Lcom/caseys/commerce/repo/rewards/t0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {v1}, Lcom/caseys/commerce/repo/rewards/t0;->z0()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    iput-boolean v1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Lcom/caseys/commerce/repo/rewards/t0$a;->a()Lcom/caseys/commerce/repo/rewards/t0;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    invoke-virtual {v0}, Lcom/caseys/commerce/repo/rewards/t0;->z0()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-eqz v0, :cond_1
+
+    .line 22
+    .line 23
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->e:Landroidx/lifecycle/d1;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Landroidx/lifecycle/x0;->g()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    check-cast v0, Ljava/lang/CharSequence;
+
+    .line 30
+    .line 31
+    if-eqz v0, :cond_1
+
+    .line 32
+    .line 33
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v0
+
+    .line 37
+    if-nez v0, :cond_0
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_0
+    sget-object v0, Lq7/b;->a:Lq7/b;
+
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Lq7/b;->j()Lcom/caseys/commerce/ui/home/dynamic/model/BannerRequestBody;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    if-eqz v0, :cond_1
+
+    .line 47
+    .line 48
+    invoke-static {p0}, Landroidx/lifecycle/i2;->a(Landroidx/lifecycle/h2;)Lkotlinx/coroutines/s0;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v1
+
+    .line 52
+    new-instance v4, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$a;
+
+    .line 53
+    .line 54
+    const/4 v2, 0x0
+
+    .line 55
+    invoke-direct {v4, v0, p0, v2}, Lcom/caseys/commerce/ui/order/plp/viewmodel/g$a;-><init>(Lcom/caseys/commerce/ui/home/dynamic/model/BannerRequestBody;Lcom/caseys/commerce/ui/order/plp/viewmodel/g;Lkotlin/coroutines/f;)V
+
+    .line 56
+    .line 57
+    .line 58
+    const/4 v5, 0x3
+
+    .line 59
+    const/4 v6, 0x0
+
+    .line 60
+    const/4 v3, 0x0
+
+    .line 61
+    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/i;->e(Lkotlinx/coroutines/s0;Lkotlin/coroutines/j;Lkotlinx/coroutines/u0;Leg/p;ILjava/lang/Object;)Lkotlinx/coroutines/p2;
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A()Landroidx/lifecycle/d1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/d1<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->e:Landroidx/lifecycle/d1;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final B()Landroidx/lifecycle/x0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/x0<",
+            "Lcom/caseys/commerce/data/w<",
+            "Lr7/h;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->l:Landroidx/lifecycle/x0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final C()Landroidx/lifecycle/x0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/x0<",
+            "Lcom/caseys/commerce/data/w<",
+            "Ljava/util/List<",
+            "Lu6/f;",
+            ">;>;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->j:Landroidx/lifecycle/x0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final D()Landroidx/lifecycle/d1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/d1<",
+            "Lr7/b;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->k:Landroidx/lifecycle/d1;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final E()Lcom/caseys/commerce/ui/order/plp/adapter/c$r;
+    .locals 1
+    .annotation build Lqi/m;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->g:Lcom/caseys/commerce/ui/order/plp/adapter/c$r;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final L(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final M(Lcom/caseys/commerce/ui/order/plp/adapter/c$r;)V
+    .locals 0
+    .param p1    # Lcom/caseys/commerce/ui/order/plp/adapter/c$r;
+        .annotation build Lqi/m;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->g:Lcom/caseys/commerce/ui/order/plp/adapter/c$r;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final x()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->d:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final z()Landroidx/lifecycle/b1;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/b1<",
+            "Lcom/caseys/commerce/data/w<",
+            "Ljava/util/List<",
+            "Lu6/f;",
+            ">;>;>;"
+        }
+    .end annotation
+
+    .annotation build Lqi/l;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/caseys/commerce/ui/order/plp/viewmodel/g;->h:Landroidx/lifecycle/b1;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

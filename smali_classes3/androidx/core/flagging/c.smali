@@ -1,0 +1,42 @@
+.class final Landroidx/core/flagging/c;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Landroidx/core/flagging/a;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/String;Z)Z
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "flagName"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return p2
+.end method
