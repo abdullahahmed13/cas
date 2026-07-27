@@ -1,0 +1,159 @@
+.class public final Lkotlinx/serialization/json/k$a;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkotlinx/serialization/json/k;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public static a(Lkotlinx/serialization/json/k;Lkotlinx/serialization/descriptors/f;)I
+    .locals 1
+    .param p0    # Lkotlinx/serialization/json/k;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .param p1    # Lkotlinx/serialization/descriptors/f;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "descriptor"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0, p1}, Lkotlinx/serialization/encoding/d$b;->a(Lkotlinx/serialization/encoding/d;Lkotlinx/serialization/descriptors/f;)I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p0
+
+    .line 10
+    return p0
+.end method
+
+.method public static b(Lkotlinx/serialization/json/k;Lkotlinx/serialization/e;)Ljava/lang/Object;
+    .locals 1
+    .param p0    # Lkotlinx/serialization/json/k;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .param p1    # Lkotlinx/serialization/e;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlinx/serialization/json/k;",
+            "Lkotlinx/serialization/e<",
+            "+TT;>;)TT;"
+        }
+    .end annotation
+
+    .annotation runtime Lkotlinx/serialization/g;
+    .end annotation
+
+    .annotation build Lqi/m;
+    .end annotation
+
+    .line 1
+    const-string v0, "deserializer"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0, p1}, Lkotlinx/serialization/encoding/f$a;->a(Lkotlinx/serialization/encoding/f;Lkotlinx/serialization/e;)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+.method public static c(Lkotlinx/serialization/json/k;)Z
+    .locals 0
+    .param p0    # Lkotlinx/serialization/json/k;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .annotation runtime Lkotlinx/serialization/g;
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lkotlinx/serialization/encoding/d$b;->c(Lkotlinx/serialization/encoding/d;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static d(Lkotlinx/serialization/json/k;Lkotlinx/serialization/e;)Ljava/lang/Object;
+    .locals 1
+    .param p0    # Lkotlinx/serialization/json/k;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .param p1    # Lkotlinx/serialization/e;
+        .annotation build Lqi/l;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lkotlinx/serialization/json/k;",
+            "Lkotlinx/serialization/e<",
+            "+TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "deserializer"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/l0;->p(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0, p1}, Lkotlinx/serialization/encoding/f$a;->b(Lkotlinx/serialization/encoding/f;Lkotlinx/serialization/e;)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method

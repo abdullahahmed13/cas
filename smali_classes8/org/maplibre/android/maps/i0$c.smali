@@ -1,0 +1,73 @@
+.class Lorg/maplibre/android/maps/i0$c;
+.super Ljava/lang/Object;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/maplibre/android/maps/i0;->v(Lorg/maplibre/android/maps/p;Lorg/maplibre/android/camera/a;Lorg/maplibre/android/maps/p$a;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Lorg/maplibre/android/maps/p$a;
+
+.field final synthetic e:Lorg/maplibre/android/maps/i0;
+
+
+# direct methods
+.method constructor <init>(Lorg/maplibre/android/maps/i0;Lorg/maplibre/android/maps/p$a;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lorg/maplibre/android/maps/i0$c;->e:Lorg/maplibre/android/maps/i0;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lorg/maplibre/android/maps/i0$c;->d:Lorg/maplibre/android/maps/p$a;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lorg/maplibre/android/maps/i0$c;->d:Lorg/maplibre/android/maps/p$a;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lorg/maplibre/android/maps/p$a;->a()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method

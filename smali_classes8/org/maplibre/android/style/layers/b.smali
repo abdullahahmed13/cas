@@ -1,0 +1,40 @@
+.class public Lorg/maplibre/android/style/layers/b;
+.super Lorg/maplibre/android/style/layers/e;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lorg/maplibre/android/style/layers/e<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/o0;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lorg/maplibre/android/style/layers/e;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

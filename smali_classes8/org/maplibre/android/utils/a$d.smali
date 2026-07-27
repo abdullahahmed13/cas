@@ -1,0 +1,109 @@
+.class Lorg/maplibre/android/utils/a$d;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/maplibre/android/utils/a;->b(Landroid/view/View;FLorg/maplibre/android/utils/a$e;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Landroid/view/View;
+
+.field final synthetic e:Lorg/maplibre/android/utils/a$e;
+
+
+# direct methods
+.method constructor <init>(Landroid/view/View;Lorg/maplibre/android/utils/a$e;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lorg/maplibre/android/utils/a$d;->d:Landroid/view/View;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lorg/maplibre/android/utils/a$d;->e:Lorg/maplibre/android/utils/a$e;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lorg/maplibre/android/utils/a$d;->d:Landroid/view/View;
+
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object p1, p0, Lorg/maplibre/android/utils/a$d;->e:Lorg/maplibre/android/utils/a$e;
+
+    .line 12
+    .line 13
+    if-eqz p1, :cond_0
+
+    .line 14
+    .line 15
+    invoke-interface {p1}, Lorg/maplibre/android/utils/a$e;->a()V
+
+    .line 16
+    .line 17
+    .line 18
+    :cond_0
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationStart(Landroid/animation/Animator;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lorg/maplibre/android/utils/a$d;->d:Landroid/view/View;
+
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method

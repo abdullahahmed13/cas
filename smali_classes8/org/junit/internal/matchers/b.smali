@@ -1,0 +1,215 @@
+.class public Lorg/junit/internal/matchers/b;
+.super Lorg/hamcrest/p;
+.source "r8-map-id-7222575ca7e0350cdfd7f8607eb26f048b569660ad1b5c420f5ef9c19fbf9e2e"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Throwable;",
+        ">",
+        "Lorg/hamcrest/p<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final f:Lorg/hamcrest/k;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/hamcrest/k<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lorg/hamcrest/k;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/hamcrest/k<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lorg/hamcrest/p;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lorg/junit/internal/matchers/b;->f:Lorg/hamcrest/k;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static h(Lorg/hamcrest/k;)Lorg/hamcrest/k;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Throwable;",
+            ">(",
+            "Lorg/hamcrest/k<",
+            "*>;)",
+            "Lorg/hamcrest/k<",
+            "TT;>;"
+        }
+    .end annotation
+
+    .annotation runtime Lorg/hamcrest/i;
+    .end annotation
+
+    .line 1
+    new-instance v0, Lorg/junit/internal/matchers/b;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lorg/junit/internal/matchers/b;-><init>(Lorg/hamcrest/k;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b(Lorg/hamcrest/g;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "exception with cause "
+
+    .line 2
+    .line 3
+    invoke-interface {p1, v0}, Lorg/hamcrest/g;->b(Ljava/lang/String;)Lorg/hamcrest/g;
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lorg/junit/internal/matchers/b;->f:Lorg/hamcrest/k;
+
+    .line 7
+    .line 8
+    invoke-interface {p1, v0}, Lorg/hamcrest/g;->f(Lorg/hamcrest/m;)Lorg/hamcrest/g;
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method protected bridge synthetic e(Ljava/lang/Object;Lorg/hamcrest/g;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lorg/junit/internal/matchers/b;->g(Ljava/lang/Throwable;Lorg/hamcrest/g;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method protected bridge synthetic f(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lorg/junit/internal/matchers/b;->i(Ljava/lang/Throwable;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method protected g(Ljava/lang/Throwable;Lorg/hamcrest/g;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lorg/hamcrest/g;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "cause "
+
+    .line 2
+    .line 3
+    invoke-interface {p2, v0}, Lorg/hamcrest/g;->b(Ljava/lang/String;)Lorg/hamcrest/g;
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lorg/junit/internal/matchers/b;->f:Lorg/hamcrest/k;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-interface {v0, p1, p2}, Lorg/hamcrest/k;->c(Ljava/lang/Object;Lorg/hamcrest/g;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method protected i(Ljava/lang/Throwable;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lorg/junit/internal/matchers/b;->f:Lorg/hamcrest/k;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Lorg/hamcrest/k;->d(Ljava/lang/Object;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    return p1
+.end method
